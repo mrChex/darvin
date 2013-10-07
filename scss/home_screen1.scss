@@ -1,7 +1,7 @@
 body {
   .homepage {
 
-    $height: 650px;
+    $height: 800px;
     $width: 1100px;
 
     $image_height: 393px;
@@ -13,10 +13,10 @@ body {
       height: inherit;
       width: inherit;
       background: url(images/home/screen1/background.jpg) no-repeat center #ccc;
-      -moz-background-size: 100%; /* Firefox 3.6+ */
-      -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-      -o-background-size: 100%; /* Opera 9.6+ */
-      background-size: 100%;
+      -moz-background-size: cover; /* Firefox 3.6+ */
+      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover; /* Opera 9.6+ */
+      background-size: cover;
 
       .image {
         background: url(images/home/screen1/text.png) no-repeat;
