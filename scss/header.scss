@@ -1,11 +1,21 @@
 @font-face {
   font-family: PrimeLight;
-  src: url("fonts/Prime/Prime Light.otf") format("opentype");
+  src: url("fonts/Prime/Prime Light.otf");
 }
 
 @font-face {
   font-family: Bender;
   src: url("fonts/Bender/Jovanny Lemonad - Bender.otf");
+}
+
+@font-face {
+  font-family: BenderLight;
+  src: url("fonts/Bender/Jovanny Lemonad - Bender-Light.otf");
+}
+
+@font-face {
+  font-family: BenderBold;
+  src: url("fonts/Bender/Jovanny Lemonad - Bender-Bold.otf");
 }
 
 body {

@@ -1,13 +1,16 @@
 body .homepage {
   height: 800px;
   max-height: 800px;
-  overflow-y: hidden;
-  overflow-x: auto;
+  overflow: auto;
   min-width: 1100px; }
   body .homepage .shape {
     background: url(images/home/shape.png) center;
     width: inherit;
     height: inherit; }
+  body .homepage .line {
+    background: url(images/home/line_background.png);
+    border-radius: 7px;
+    height: 7px; }
   body .homepage .screen1 {
     height: inherit;
     width: inherit;
@@ -28,4 +31,40 @@ body .homepage {
       margin-top: 203.5px; }
   body .homepage .screen2 {
     height: inherit;
-    width: inherit; }
+    width: inherit;
+    background: url(images/home/screen2/background.jpg) no-repeat center #cccccc;
+    -moz-background-size: cover;
+    /* Firefox 3.6+ */
+    -webkit-background-size: cover;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover;
+    /* Opera 9.6+ */
+    background-size: cover; }
+    body .homepage .screen2 .center {
+      margin-left: auto;
+      margin-right: auto; }
+    body .homepage .screen2 .theorytext {
+      background: url(images/home/screen2/theory_text.png);
+      width: 757px;
+      height: 71px;
+      margin-top: 250px; }
+    body .homepage .screen2 .line {
+      width: 757px;
+      margin-top: 15px; }
+    body .homepage .screen2 blockquote {
+      background: url(images/home/screen2/quote.png);
+      font-family: BenderLight;
+      font-size: 18px;
+      color: #ffffff;
+      width: 466px;
+      height: 109px;
+      padding-left: 75px;
+      padding-right: 75px;
+      padding-top: 20px;
+      margin-top: 50px; }
+      body .homepage .screen2 blockquote b {
+        font-family: BenderBold;
+        display: block;
+        clear: both;
+        float: right;
+        color: #f6b900; }
