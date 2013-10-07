@@ -11,10 +11,9 @@ body .homepage {
     background: url(images/home/line_background.png);
     border-radius: 7px;
     height: 7px; }
-  body .homepage .screen1 {
+  body .homepage .screen {
     height: inherit;
     width: inherit;
-    background: url(images/home/screen1/background.jpg) no-repeat center #cccccc;
     -moz-background-size: cover;
     /* Firefox 3.6+ */
     -webkit-background-size: cover;
@@ -22,6 +21,8 @@ body .homepage {
     -o-background-size: cover;
     /* Opera 9.6+ */
     background-size: cover; }
+  body .homepage .screen1 {
+    background: url(images/home/screen1/background.jpg) no-repeat center #cccccc; }
     body .homepage .screen1 .image {
       background: url(images/home/screen1/text.png) no-repeat;
       width: 752px;
@@ -30,16 +31,7 @@ body .homepage {
       margin-right: auto;
       margin-top: 203.5px; }
   body .homepage .screen2 {
-    height: inherit;
-    width: inherit;
-    background: url(images/home/screen2/background.jpg) no-repeat center #cccccc;
-    -moz-background-size: cover;
-    /* Firefox 3.6+ */
-    -webkit-background-size: cover;
-    /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: cover;
-    /* Opera 9.6+ */
-    background-size: cover; }
+    background: url(images/home/screen2/background.jpg) no-repeat center #cccccc; }
     body .homepage .screen2 .center {
       margin-left: auto;
       margin-right: auto; }
