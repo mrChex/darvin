@@ -1,0 +1,8 @@
+body footer {
+  background: url(images/header/background.jpg) black;
+  height: 70px;
+  line-height: 70px; }
+  body footer .copyright {
+    float: left;
+    color: #909090;
+    margin-left: 50px; }

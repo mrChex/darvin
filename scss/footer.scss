@@ -1,0 +1,16 @@
+body {
+  $height: 70px;
+
+  footer {
+    background: url(images/header/background.jpg) #000000;
+    height: $height;
+    line-height: $height;
+
+    .copyright {
+      float: left;
+      color: #909090;
+      margin-left: 50px;
+    }
+
+  }
+}
