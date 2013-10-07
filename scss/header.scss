@@ -1,0 +1,102 @@
+@font-face {
+  font-family: PrimeLight;
+  src: url("fonts/Prime/Prime Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Bender;
+  src: url("fonts/Bender/Jovanny Lemonad - Bender.otf");
+}
+
+body {
+  margin: 0px;
+  background-color: #47c1a8;
+  font-family: Bender;
+
+  $home_width: 140px;
+  $development_width: 150px;
+  $strategy_width: 180px;
+  $team_width: 120px;
+  $portfolio_width: 130px;
+  $contact_us_width: 150px;
+
+  $logo_width: 98px;
+  $logo_margin: 5px;
+  $header_width: $home_width + $development_width + $strategy_width + $team_width + $portfolio_width + $contact_us_width + $logo_width + $logo_margin * 2;
+  $header_height: 41px;
+
+  header {
+    background: url(images/header/background.jpg) repeat-x #000000;
+    height: $header_height;
+    max-height: $header_height;
+    min-width: $header_width;
+    overflow: hidden;
+
+    .container {
+      color: #ffffff;
+      width: $header_width;
+      height: $header_height;
+      margin-left: auto;
+      margin-right: auto;
+
+      a {
+        display: block;
+        height: $header_height;
+        line-height: $header_height;  // hack for centrate text in block
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        float: left;
+
+        div {  // underline
+          display: none;
+          height: 5px;
+          background: #f6b900;
+          margin-top: -6px;
+          border-radius: 5px;
+        }
+      }
+
+      a.home {
+        width: $home_width;
+      }
+
+      a.development {
+        width: $development_width;
+      }
+
+      a.strategy {
+        width: $strategy_width - $logo_margin;
+      }
+
+      a.team {
+        width: $team_width;
+        margin-left: $logo_width + $logo_margin
+      }
+
+      a.portfolio {
+        width: $portfolio_width;
+      }
+
+      a.contactus {
+        width: $contact_us_width;
+      }
+
+      a.active {
+        div {
+          display: block;
+        }
+      }
+
+      a.logo {
+        width: $logo_width;
+        height: 81px;
+        background: url(images/header/logo.png) no-repeat;
+        position: absolute;
+        margin-left: $header_width / 2 - 98 / 2;
+      }
+
+    }
+  }
+
+}

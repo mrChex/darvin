@@ -1,0 +1,21 @@
+body .homepage {
+  height: 650px;
+  min-width: 1100px; }
+  body .homepage .screen1 {
+    height: inherit;
+    width: inherit;
+    background: url(images/home/screen1/background.jpg) no-repeat center #cccccc;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%; }
+    body .homepage .screen1 .image {
+      background: url(images/home/screen1/text.png) no-repeat;
+      width: 752px;
+      height: 393px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 128.5px; }
