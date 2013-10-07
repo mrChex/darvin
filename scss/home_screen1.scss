@@ -7,7 +7,16 @@ body {
     $image_height: 393px;
 
     height: $height;
+    max-height: $height;
+    overflow-y: hidden;
+    overflow-x: auto;
     min-width: $width;
+
+    .shape {
+      background: url(images/home/shape.png) center;
+      width: inherit;
+      height: inherit;
+    }
 
     .screen1 {
       height: inherit;
@@ -26,6 +35,13 @@ body {
         margin-right: auto;
         margin-top: $height / 2 - $image_height / 2;
       }
+
+    }
+
+
+    .screen2 {
+      height: inherit;
+      width: inherit;
 
     }
 
