@@ -3,6 +3,14 @@ body .homepage {
   max-height: 800px;
   overflow: hidden;
   min-width: 1100px; }
+  body .homepage .next_slide {
+    position: absolute;
+    width: 61px;
+    height: 72px;
+    background: url(images/home/next_slide.png) no-repeat;
+    top: 100px;
+    right: 100px;
+    z-index: 10; }
   body .homepage .shape {
     background: url(images/home/shape.png) center;
     width: inherit;

@@ -11,6 +11,16 @@ body {
     overflow: hidden;
     min-width: $width;
 
+    .next_slide {
+      position: absolute;
+      width: 61px;
+      height: 72px;
+      background: url(images/home/next_slide.png) no-repeat;
+      top: 100px;
+      right: 100px;
+      z-index: 10;
+    }
+
     .shape {
       background: url(images/home/shape.png) center;
       width: inherit;

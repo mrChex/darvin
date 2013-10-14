@@ -1,5 +1,5 @@
 (function() {
-  var get_window_width, home_screen1, home_screen2, home_screen3, home_screen3_blocks, home_screen3_blocks_0, home_screen3_blocks_1, home_screen3_blocks_2, home_screen4, home_screen_2_blockquote, home_screen_2_line, home_screen_2_theorytext, screen1_hide, screen2_hide, screen2_show, screen3_hide, screen3_show, screen4_show, slider;
+  var current_slide, get_window_width, home_screen1, home_screen2, home_screen3, home_screen3_blocks, home_screen3_blocks_0, home_screen3_blocks_1, home_screen3_blocks_2, home_screen4, home_screen_2_blockquote, home_screen_2_line, home_screen_2_theorytext, screen1_hide, screen2_hide, screen2_show, screen3_hide, screen3_show, screen4_show, slider;
 
   get_window_width = function() {
     return window.document.body.offsetWidth;
@@ -10,6 +10,8 @@
   home_screen_2_theorytext = home_screen_2_line = home_screen_2_blockquote = false;
 
   home_screen3_blocks = home_screen3_blocks_0 = home_screen3_blocks_1 = home_screen3_blocks_2 = false;
+
+  current_slide = 1;
 
   $(function() {
     home_screen1 = $("#home_screen1");
@@ -22,7 +24,13 @@
     home_screen3_blocks_0 = $(home_screen3_blocks[0]);
     home_screen3_blocks_1 = $(home_screen3_blocks[1]);
     home_screen3_blocks_2 = $(home_screen3_blocks[2]);
-    return home_screen4 = $("#home_screen4");
+    home_screen4 = $("#home_screen4");
+    return $("#next_slide").bind('mousedown', function() {
+      slider(++current_slide);
+      if (current_slide === 4) {
+        return $(this).css("display", 'none');
+      }
+    });
   });
 
   screen1_hide = function() {
@@ -154,17 +162,16 @@
     if (screenI === 2) {
       screen1_hide();
       screen2_show();
-    }
-    if (screenI === 3) {
+    } else if (screenI === 3) {
       screen2_hide(function() {
         return screen3_show();
       });
-    }
-    if (screenI === 4) {
-      return screen3_hide(function() {
+    } else if (screenI === 4) {
+      screen3_hide(function() {
         return screen4_show();
       });
     }
+    return true;
   };
 
   window.slider = slider;

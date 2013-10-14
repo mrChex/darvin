@@ -4,6 +4,7 @@ home_screen1 = home_screen2 = home_screen3 = home_screen4 = no
 home_screen_2_theorytext = home_screen_2_line = home_screen_2_blockquote = no
 home_screen3_blocks = home_screen3_blocks_0 = home_screen3_blocks_1 = home_screen3_blocks_2 = no
 
+current_slide = 1
 $ ->
 	home_screen1 = $("#home_screen1")
 
@@ -19,6 +20,10 @@ $ ->
 	home_screen3_blocks_2 = $ home_screen3_blocks[2]
 
 	home_screen4 = $("#home_screen4")
+
+	$("#next_slide").bind 'mousedown', ->
+		slider(++current_slide)
+		if current_slide is 4 then $(@).css "display", 'none'
 
 screen1_hide =->
 	home_screen1.animate {left: -(get_window_width())},
@@ -67,12 +72,10 @@ slider = (screenI)->
 	if screenI is 2
 		screen1_hide()
 		screen2_show()
-	if screenI is 3
+	else if screenI is 3
 		screen2_hide -> screen3_show()
-	if screenI is 4
+	else if screenI is 4
 		screen3_hide -> screen4_show()
 
-
-
-
+	return yes
 window.slider = slider
