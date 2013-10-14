@@ -26,14 +26,19 @@ body {
     .screen {
       height: inherit;
       width: inherit;
+      position: relative;
+      z-index: 3;
+      //opacity: 0;
+    }
+
+    .screen1 {
+      opacity: 1;
+      background: url(images/home/screen1/background.jpg) no-repeat center #ccc;
       -moz-background-size: cover; /* Firefox 3.6+ */
       -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
       -o-background-size: cover; /* Opera 9.6+ */
       background-size: cover;
-    }
-
-    .screen1 {
-      background: url(images/home/screen1/background.jpg) no-repeat center #ccc;
+      z-index: 4;
 
       .image {
         background: url(images/home/screen1/text.png) no-repeat;
@@ -50,6 +55,13 @@ body {
 
     .screen2 {
       background: url(images/home/screen2/background.jpg) no-repeat center #ccc;
+      -moz-background-size: cover; /* Firefox 3.6+ */
+      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover; /* Opera 9.6+ */
+      background-size: cover;
+      z-index: 3;
+      top: -$height;
+      right: -100px;
 
       .center {
         margin-left: auto;
@@ -61,11 +73,15 @@ body {
         width: 757px;
         height: 71px;
         margin-top: 250px;
+        position: relative;
+        right: -500px;
+        opacity: 0;
       }
 
       .line {
         width: 757px;
         margin-top: 15px;
+        opacity: 0;
       }
 
       blockquote {
@@ -79,6 +95,9 @@ body {
         padding-right: 75px;
         padding-top: 20px;
         margin-top: 50px;
+        position: relative;
+        left: -500px;
+        opacity: 0;
 
         b {
           font-family: BenderBold;
@@ -88,6 +107,83 @@ body {
           color: #f6b900
         }
       }
+    }
+
+    .screen3 {
+      background: url(images/home/screen3/background.jpg) no-repeat center #ccc;
+      -moz-background-size: cover; /* Firefox 3.6+ */
+      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover; /* Opera 9.6+ */
+      background-size: cover;
+
+      z-index: 2;
+      top: -( $height * 2 );
+      right: -100px;
+
+      $blocks_count: 3;
+      $block_width: 296px;
+      $block_height: 560px;
+      $block_margin_left: 35px;
+
+      .blocks_container {
+        width: $block_width * $blocks_count + ( ($blocks_count - 1 ) * $block_margin_left );
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: $height / 2 - $block_height / 2;
+
+        .block_container {
+          background: url(images/home/screen3/container_top.png) no-repeat top;
+          width: $block_width;
+          height: $block_height;
+          float: left;
+          position: relative;
+          opacity: 0;
+
+          .inside {
+            background: url(images/home/screen3/container_middle.png) repeat-y;
+            margin-top: 87px; // -1px hack for pretty zooming in safari
+            height: $block_height - 87px - 87px;
+            width: $block_width - 20px - 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 12pt;
+            font-family: Bender;
+
+            h2 {
+              font-family: BenderBold;
+              text-align: center;
+              text-transform: uppercase;
+            }
+          }
+
+          .bottom {
+            background: url(images/home/screen3/container_bottom.png) no-repeat bottom;
+            height: 88px;
+            margin-top: -1px; // hack for pretty zooming in safari
+            width: $block_width;
+          }
+
+        }
+
+        .width_margin_left {  // for second+ blocks
+          margin-left: $block_margin_left;
+        }
+
+      }
+
+    }
+
+    .screen4 {
+      background: url(images/home/screen4/background.jpg) no-repeat center #ccc;
+      -moz-background-size: cover; /* Firefox 3.6+ */
+      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover; /* Opera 9.6+ */
+      background-size: cover;
+
+      z-index: 1;
+      top: -( $height * 3 );
+      right: -100px;
+
     }
 
   }
