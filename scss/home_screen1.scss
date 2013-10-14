@@ -1,7 +1,7 @@
 body {
   .homepage {
 
-    $height: 800px;
+    $height: 790px;
     $width: 1100px;
 
     $image_height: 393px;
@@ -19,6 +19,7 @@ body {
       top: 100px;
       right: 100px;
       z-index: 10;
+      cursor: pointer;
     }
 
     .shape {

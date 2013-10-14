@@ -1,6 +1,6 @@
 body .homepage {
-  height: 800px;
-  max-height: 800px;
+  height: 790px;
+  max-height: 790px;
   overflow: hidden;
   min-width: 1100px; }
   body .homepage .next_slide {
@@ -10,7 +10,8 @@ body .homepage {
     background: url(images/home/next_slide.png) no-repeat;
     top: 100px;
     right: 100px;
-    z-index: 10; }
+    z-index: 10;
+    cursor: pointer; }
   body .homepage .shape {
     background: url(images/home/shape.png) center;
     width: inherit;
@@ -41,7 +42,7 @@ body .homepage {
       height: 393px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 203.5px; }
+      margin-top: 198.5px; }
   body .homepage .screen2 {
     background: url(images/home/screen2/background.jpg) no-repeat center #cccccc;
     -moz-background-size: cover;
@@ -52,7 +53,7 @@ body .homepage {
     /* Opera 9.6+ */
     background-size: cover;
     z-index: 3;
-    top: -800px;
+    top: -790px;
     right: -100px; }
     body .homepage .screen2 .center {
       margin-left: auto;
@@ -99,13 +100,13 @@ body .homepage {
     /* Opera 9.6+ */
     background-size: cover;
     z-index: 2;
-    top: -1600px;
+    top: -1580px;
     right: -100px; }
     body .homepage .screen3 .blocks_container {
       width: 958px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 120px; }
+      margin-top: 115px; }
       body .homepage .screen3 .blocks_container .block_container {
         background: url(images/home/screen3/container_top.png) no-repeat top;
         width: 296px;
@@ -143,5 +144,5 @@ body .homepage {
     /* Opera 9.6+ */
     background-size: cover;
     z-index: 1;
-    top: -2400px;
+    top: -2370px;
     right: -100px; }
