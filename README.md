@@ -13,6 +13,7 @@ darvin
 
 В работе:
 - development page screen 2
+- переключатель на development screen1
 
 Необходимо реализовать:
 - footer

@@ -1,7 +1,7 @@
 body .developmentpage {
   height: 790px;
   max-height: 790px;
-  overflow: hidden;
+  overflow: auto;
   min-width: 1100px; }
   body .developmentpage .screen1 {
     background: url(images/development/screen1_background.jpg) repeat-x bottom #313536; }
@@ -68,3 +68,30 @@ body .developmentpage {
         margin-left: auto;
         margin-right: auto;
         font-family: Bender; }
+  body .developmentpage .screen2 .shape {
+    z-index: 100;
+    position: relative; }
+  body .developmentpage .screen2 .top_container {
+    background-color: #303435;
+    height: 459px; }
+    body .developmentpage .screen2 .top_container .inside {
+      font-family: BenderBold;
+      font-size: 32px;
+      color: #fff;
+      text-align: center;
+      margin-top: 150px;
+      line-height: 50px; }
+  body .developmentpage .screen2 .bottom_container {
+    background-color: #2d487b;
+    height: 332px; }
+    body .developmentpage .screen2 .bottom_container .inside {
+      width: 850px;
+      margin-left: auto;
+      margin-right: auto; }
+      body .developmentpage .screen2 .bottom_container .inside .text {
+        width: 400px;
+        margin-top: 70px;
+        font-family: Bender;
+        color: #fff;
+        float: left;
+        font-size: 17px; }
