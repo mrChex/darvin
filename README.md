@@ -10,10 +10,12 @@ darvin
 - слайдер для главной со специальным эффектами для каждой отдельной страницы (тайминги, скорости, эффекты настраиваемые)
 - screen4 раздела home (возможен рефакторинг или переосмысление)
 - development page screen 1
+- development page screen 2
 
 В работе:
-- development page screen 2
 - переключатель на development screen1
+- анимация страницы development
+- верстка страницы strategy
 
 Необходимо реализовать:
 - footer
