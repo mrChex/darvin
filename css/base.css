@@ -1,0 +1,29 @@
+.line {
+  background: url(images/home/line_background.png);
+  border-radius: 7px;
+  height: 7px; }
+
+.next_slide {
+  position: absolute;
+  width: 61px;
+  height: 72px;
+  background: url(images/home/next_slide.png) no-repeat;
+  top: 80px;
+  right: 50px;
+  z-index: 10;
+  cursor: pointer; }
+
+.shape {
+  background: url(images/home/shape.png) center;
+  width: inherit;
+  height: inherit; }
+
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.screen {
+  height: inherit;
+  width: inherit;
+  position: relative;
+  z-index: 3; }

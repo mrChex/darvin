@@ -11,36 +11,6 @@ body {
     overflow: hidden;
     min-width: $width;
 
-    .next_slide {
-      position: absolute;
-      width: 61px;
-      height: 72px;
-      background: url(images/home/next_slide.png) no-repeat;
-      top: 100px;
-      right: 100px;
-      z-index: 10;
-      cursor: pointer;
-    }
-
-    .shape {
-      background: url(images/home/shape.png) center;
-      width: inherit;
-      height: inherit;
-    }
-
-    .line {
-      background: url(images/home/line_background.png);
-      border-radius: 7px;
-      height: 7px;
-    }
-
-    .screen {
-      height: inherit;
-      width: inherit;
-      position: relative;
-      z-index: 3;
-    }
-
     .screen1 {
       background: url(images/home/screen1/background.jpg) no-repeat center #ccc;
       -moz-background-size: cover; /* Firefox 3.6+ */
@@ -71,11 +41,6 @@ body {
       z-index: 3;
       top: -$height;
       right: -100px;
-
-      .center {
-        margin-left: auto;
-        margin-right: auto;
-      }
 
       .theorytext {
         background: url(images/home/screen2/theory_text.png);
