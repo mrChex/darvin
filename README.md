@@ -14,11 +14,15 @@ darvin
 - переключатель на development screen1
 - анимация страницы development
 - убрана полоска в 1px перед футером
-
-В работе:
 - верстка страницы strategy screen1
 - верстка страницы strategy screen2
 - верстка страницы strategy screen3
+
+В работе:
+- Переключатель для strategy screen2
+- Изменение ширины блока цитаты в screen3
+- Анимации слайдера для strategy
+
 
 Необходимо реализовать:
 - footer

@@ -44,26 +44,6 @@ body .homepage {
       width: 757px;
       margin-top: 15px;
       opacity: 0; }
-    body .homepage .screen2 blockquote {
-      background: url(images/home/screen2/quote.png);
-      font-family: BenderLight;
-      font-size: 18px;
-      color: #ffffff;
-      width: 466px;
-      height: 109px;
-      padding-left: 75px;
-      padding-right: 75px;
-      padding-top: 20px;
-      margin-top: 50px;
-      position: relative;
-      left: -500px;
-      opacity: 0; }
-      body .homepage .screen2 blockquote b {
-        font-family: BenderBold;
-        display: block;
-        clear: both;
-        float: right;
-        color: #f6b900; }
   body .homepage .screen3 {
     background: url(images/home/screen3/background.jpg) no-repeat center #cccccc;
     -moz-background-size: cover;
