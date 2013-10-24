@@ -6,6 +6,7 @@ body {
     height: $height;
     line-height: $height;
     min-width: 1100px;
+    margin-top: -1px;
 
     .copyright {
       float: left;

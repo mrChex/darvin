@@ -4,7 +4,7 @@
         <title>Darvin title</title>
         <link href="styles.css" rel="stylesheet" media="screen">
         <script src="js/jquery-2.0.2.min.js"></script>
-        <script src="js/slider.js"></script>
+        <script src="js/slider_development.js"></script>
     </head>
     <body>
 
@@ -24,7 +24,7 @@
         </header>
 
 
-        <div class="developmentpage">
+        <div class="developmentpage" id="developmentpage">
             <div class="next_slide" id="next_slide"></div>
 
             <div class="screen screen1" id="development_screen1">&nbsp;
@@ -37,19 +37,36 @@
 
                 <div class="menu_container"><div class="another_menu_container">
                     <div class="menu">
-                        <div class="analyze"><div class="inside">Analyze</div></div>
-                        <div class="plan selected"><div class="inside">Plan</div></div>
-                        <div class="execute"><div class="inside">Execute</div></div>
-                        <div class="evaluate"><div class="inside">Evaluate</div></div>
-                        <div class="launch"><div class="inside">Launch</div></div>
-                        <div class="nurture"><div class="inside">Nurture</div></div>
+                        <div class="analyze selected" data-type="item" data-value="analyze"><div class="inside">Analyze</div></div>
+                        <div class="plan" data-type="item" data-value="plan"><div class="inside">Plan</div></div>
+                        <div class="execute" data-type="item" data-value="execute"><div class="inside">Execute</div></div>
+                        <div class="evaluate" data-type="item" data-value="evaluate"><div class="inside">Evaluate</div></div>
+                        <div class="launch" data-type="item" data-value="launch"><div class="inside">Launch</div></div>
+                        <div class="nurture" data-type="item" data-value="nurture"><div class="inside">Nurture</div></div>
                         <div style="clear: both;"></div>
                     </div>
                 </div></div>
 
-                <div class="shape"><div class="inside">
-                    Develop a provvvttvvaatject plan to meet your needs. We bridge the concept to reality with design, wireframes, and development schedule.
-                </div></div>
+                <div class="shape">
+                    <div class="inside analyze">
+                        Develop a provvvttvvaatject plan to meet your needs. We bridge the concept to reality with design, wireframes, and development schedule.
+                    </div>
+                    <div class="inside plan">
+                        Plan text
+                    </div>
+                    <div class="inside execute">
+                        execute text
+                    </div>
+                    <div class="inside evaluate">
+                        evaluate text
+                    </div>
+                    <div class="inside launch">
+                        launch text
+                    </div>
+                    <div class="inside nurture">
+                        nurture text
+                    </div>
+                </div>
             </div>
 
             <div class="screen screen2" id="development_screen2">

@@ -11,11 +11,14 @@ darvin
 - screen4 раздела home (возможен рефакторинг или переосмысление)
 - development page screen 1
 - development page screen 2
-
-В работе:
 - переключатель на development screen1
 - анимация страницы development
-- верстка страницы strategy
+- убрана полоска в 1px перед футером
+
+В работе:
+- верстка страницы strategy screen1
+- верстка страницы strategy screen2
+- верстка страницы strategy screen3
 
 Необходимо реализовать:
 - footer
