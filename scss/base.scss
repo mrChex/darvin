@@ -56,3 +56,17 @@ blockquote {
     color: #f6b900
   }
 }
+
+.social {
+  width: 43px;
+  height: 37px;
+  display: block;
+}
+
+.social.linkedin {
+  background: url(images/social/linkedin.png) no-repeat;
+}
+
+.social.facebook {
+  background: url(images/social/facebook.png) no-repeat;
+}

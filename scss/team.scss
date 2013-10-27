@@ -1,0 +1,183 @@
+body {
+  .teampage {
+
+    $height: 791px;
+    $width: 1100px;
+
+    height: $height;
+    max-height: $height;
+    overflow: hidden;
+    min-width: $width;
+
+    .screen1 {
+      display: none;
+      background: url(images/team/screen1/background.jpg) no-repeat center #ccc;
+      -moz-background-size: cover; /* Firefox 3.6+ */
+      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover; /* Opera 9.6+ */
+      background-size: cover;
+      z-index: 4;
+      top: -1px;
+
+      .teamtext_container {
+        width: 850px;
+        margin-top: 250px;
+
+        .line {
+          margin-top: 35px;
+        }
+
+        .teamtext {
+          width: 583px;
+          height: 71px;
+          background: url(images/team/screen1/teamtext.png) no-repeat;
+          float: left;
+          margin-left: 35px;
+        }
+      }
+
+      blockquote {
+        display: block;
+        opacity: 1;
+        left: 0px;
+        top: 50px;
+      }
+
+    } // .screen1
+
+    .screen2 {
+      background: url(images/team/screen2/background.png) repeat-x center #1f2534;
+
+      .hexagon {
+        width: 552px;
+        height: 500px;
+        background: url(images/team/screen2/hexagon_background1.png) no-repeat;
+        margin-top: 100px;
+
+        .face {
+          display: block;
+          float:left;
+          width: 73px;
+          height: 101px;
+          background: url(images/team/screen2/face.png) no-repeat;
+          float:left;
+          position: relative;
+        }
+
+        .face.selected { background: url(images/team/screen2/face_selected.png) no-repeat;}
+
+        .face1 {
+          margin-left: 89px;
+          top: -51px;
+        }
+
+        .face2 {
+          margin-left: 225px;
+          top: -51px;
+        }
+
+        .face3 {
+          margin-top: 91px;
+          left: -46px;
+        }
+
+        .face4 {
+          margin-top: 91px;
+          right: -449px;
+        }
+
+        .face5 {
+          top: 160px;
+          left: 90px;
+        }
+        .face6 {
+          top: 160px;
+          left: 310px;
+        }
+
+        .text_container {
+          width: 552px;
+          height: 500px;
+          margin-top: -394px;
+
+          .inside {
+            color: #fff;
+            margin-top: 30px;
+            text-align: center;
+            h1 {
+              font-family: BenderBold;
+              color: #f6b900;
+              font-size: 28px;
+              margin: 0px;
+              padding: 0px;
+            }
+            p {
+              font-family: BenderLight;
+              margin: 0px;
+              padding: 0px;
+            }
+
+            hr {
+              width: 50px;
+              opacity: 0.2;
+              margin-left: 185px;
+            }
+
+            div.percents {
+              font-size: 30px;
+              color: #f6b900;
+              float: left;
+              margin-right: 10px;
+            }
+
+            .skill_container {
+              .skill_title {
+                width:200px;
+                text-align: right;
+                float: left;
+              }
+
+              .skill_bar {
+                height:30px;
+                width: 200px;
+                margin-left: 10px;
+                float:left;
+                .skill_inside:before {
+                  content: "";
+                  width: 5px;
+                  height: 19px;
+                  background: url(images/team/screen2/skill_left.png) no-repeat center;
+                  display: block;
+                  margin-left:-5px;
+                  float:left;
+                }
+                .skill_inside {
+                  background: url(images/team/screen2/skill_center.png) repeat-x center;
+                  height: 19px;
+                  margin-left: 4px;
+                  float:left;
+                }
+                .skill_inside:after {
+                  content: "";
+                  display: block;
+                  width: 21px;
+                  height: 19px;
+                  background: url(images/team/screen2/skill_right.png) no-repeat center;
+                  float:right;
+                  margin-right: -10px;
+                }
+              } // .skill_bar
+            } // .skill_container
+
+            .social {
+              float: left;
+              margin-left: 10px;
+            }
+           } // .inside
+        } // .text_container
+      } // .hexagon
+
+
+    } // .screen2
+  } // .teampage
+} // body

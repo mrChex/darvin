@@ -42,10 +42,8 @@
       $("div.screen" + current_slide).animate({
         'left': -(get_window_width())
       }, {
-        success: function() {
-          return $(this).css({
-            'opacity': 0
-          });
+        complete: function() {
+          return $(this).css('opacity', 0);
         }
       });
       return $("div.screen" + (current_slide + 1)).animate({
