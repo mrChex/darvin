@@ -4,7 +4,6 @@ body .teampage {
   overflow: hidden;
   min-width: 1100px; }
   body .teampage .screen1 {
-    display: none;
     background: url(images/team/screen1/background.jpg) no-repeat center #cccccc;
     -moz-background-size: cover;
     /* Firefox 3.6+ */
@@ -13,7 +12,7 @@ body .teampage {
     -o-background-size: cover;
     /* Opera 9.6+ */
     background-size: cover;
-    z-index: 4;
+    z-index: 5;
     top: -1px; }
     body .teampage .screen1 .teamtext_container {
       width: 850px;
@@ -32,6 +31,9 @@ body .teampage {
       left: 0px;
       top: 50px; }
   body .teampage .screen2 {
+    z-index: 4;
+    top: -791px;
+    right: -100px;
     background: url(images/team/screen2/background.png) repeat-x center #1f2534; }
     body .teampage .screen2 .hexagon {
       width: 552px;
@@ -126,3 +128,120 @@ body .teampage {
           body .teampage .screen2 .hexagon .text_container .inside .social {
             float: left;
             margin-left: 10px; }
+  body .teampage .screen3 {
+    z-index: 3;
+    top: -1582px;
+    right: -100px;
+    background: #f6b900; }
+    body .teampage .screen3 .teamfacts {
+      background: url(images/team/screen3/teamfacts.png) no-repeat;
+      width: 392px;
+      height: 55px;
+      margin-top: 100px; }
+    body .teampage .screen3 .teamfacts_table {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      margin-top: 100px; }
+      body .teampage .screen3 .teamfacts_table th {
+        height: 108px;
+        min-width: 127px; }
+      body .teampage .screen3 .teamfacts_table th.animals {
+        background: url(images/team/screen3/animals.png) no-repeat center; }
+      body .teampage .screen3 .teamfacts_table th.earth {
+        background: url(images/team/screen3/earth.png) no-repeat center; }
+      body .teampage .screen3 .teamfacts_table th.pizza {
+        background: url(images/team/screen3/pizza.png) no-repeat center; }
+      body .teampage .screen3 .teamfacts_table th.excited {
+        background: url(images/team/screen3/excited.png) no-repeat center; }
+      body .teampage .screen3 .teamfacts_table th.calendar {
+        background: url(images/team/screen3/calendar.png) no-repeat center; }
+      body .teampage .screen3 .teamfacts_table td {
+        text-align: center;
+        font-size: 18px; }
+        body .teampage .screen3 .teamfacts_table td h2 {
+          color: #fff;
+          font-family: BenderBold;
+          font-size: 28px;
+          margin-bottom: 5px; }
+  body .teampage .screen4 {
+    z-index: 2;
+    top: -2373px;
+    right: -100px;
+    background: #5b90f6; }
+    body .teampage .screen4 .affiliations {
+      margin-top: 80px;
+      background: url(images/team/screen4/affiliations.png) no-repeat;
+      width: 443px;
+      height: 56px; }
+    body .teampage .screen4 .affiliations_items {
+      display: table;
+      margin-left: auto;
+      margin-right: auto; }
+      body .teampage .screen4 .affiliations_items .item {
+        display: table-cell;
+        width: 180px;
+        height: 207px;
+        padding-right: 10px; }
+      body .teampage .screen4 .affiliations_items.first_row {
+        margin-top: 100px; }
+      body .teampage .screen4 .affiliations_items.second_row {
+        top: -43px;
+        position: relative; }
+      body .teampage .screen4 .affiliations_items .clearph {
+        background: url(images/team/screen4/clearph.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .minutes111 {
+        background: url(images/team/screen4/111.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .mindstudios {
+        background: url(images/team/screen4/mindstudios.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .apple {
+        background: url(images/team/screen4/apple.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .android {
+        background: url(images/team/screen4/android.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .windows {
+        background: url(images/team/screen4/windows.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .google {
+        background: url(images/team/screen4/google.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .blackberry {
+        background: url(images/team/screen4/blackberry.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .kindle {
+        background: url(images/team/screen4/kindle.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .html5 {
+        background: url(images/team/screen4/html5.png) no-repeat center; }
+      body .teampage .screen4 .affiliations_items .wp {
+        background: url(images/team/screen4/wp.png) no-repeat center; }
+  body .teampage .screen5 {
+    z-index: 1;
+    top: -3164px;
+    right: -100px;
+    background: #1f2534; }
+    body .teampage .screen5 .socialhub_container {
+      display: table;
+      height: 790px;
+      margin-left: auto;
+      margin-right: auto; }
+      body .teampage .screen5 .socialhub_container .item {
+        display: table-cell;
+        overflow: hidden;
+        height: inherit;
+        width: 150px;
+        max-width: 150px; }
+        body .teampage .screen5 .socialhub_container .item.selected {
+          width: 400px;
+          max-width: 400px; }
+        body .teampage .screen5 .socialhub_container .item .inside {
+          width: 400px;
+          min-width: 400px;
+          max-width: 400px;
+          height: 600px;
+          margin-top: 180px; }
+        body .teampage .screen5 .socialhub_container .item.pinterest {
+          background: url(images/team/screen5/pinterest.png) no-repeat left 10px top 80px #cb2026; }
+        body .teampage .screen5 .socialhub_container .item.twitter {
+          background: url(images/team/screen5/twitter.png) no-repeat left 10px top 80px #1ec5ff; }
+        body .teampage .screen5 .socialhub_container .item.facebook {
+          background: url(images/team/screen5/facebook.png) no-repeat left 10px top 80px #3757a8; }
+        body .teampage .screen5 .socialhub_container .item.vine {
+          background: url(images/team/screen5/vine.png) no-repeat left 10px top 80px #00a579; }
+        body .teampage .screen5 .socialhub_container .item.linkedin {
+          background: url(images/team/screen5/linkedin.png) no-repeat left 10px top 80px #1380ba; }

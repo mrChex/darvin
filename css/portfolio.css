@@ -1,0 +1,102 @@
+body .portfoliopage {
+  height: 791px;
+  max-height: 791px;
+  overflow: hidden;
+  min-width: 1100px; }
+  body .portfoliopage .screen1 {
+    display: none;
+    background: url(images/portfolio/screen1/background.jpg) no-repeat center;
+    -moz-background-size: cover;
+    /* Firefox 3.6+ */
+    -webkit-background-size: cover;
+    /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover;
+    /* Opera 9.6+ */
+    background-size: cover;
+    z-index: 5; }
+    body .portfoliopage .screen1 .portfoliotext_container {
+      width: 1066px;
+      margin-top: 250px; }
+      body .portfoliopage .screen1 .portfoliotext_container .line {
+        margin-top: 25px; }
+      body .portfoliopage .screen1 .portfoliotext_container .welcometext {
+        width: 811px;
+        height: 51px;
+        background: url(images/portfolio/screen1/welcome.png) no-repeat;
+        float: left;
+        margin-left: 35px; }
+    body .portfoliopage .screen1 .text {
+      font-family: BenderBold;
+      color: #fff;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 30px; }
+  body .portfoliopage .screen2 {
+    background: #b5b5b5; }
+    body .portfoliopage .screen2 .items_container {
+      display: table;
+      width: 100%;
+      height: 791px; }
+      body .portfoliopage .screen2 .items_container .item {
+        display: table-cell;
+        height: inherit; }
+        body .portfoliopage .screen2 .items_container .item.instagram {
+          background: url(images/portfolio/screen2/instagram.png) no-repeat right center; }
+        body .portfoliopage .screen2 .items_container .item.instagram:hover {
+          background: url(images/portfolio/screen2/instagram_selected.png) no-repeat right center; }
+        body .portfoliopage .screen2 .items_container .item.instagram:after {
+          content: "";
+          width: inherit;
+          height: inherit;
+          display: block;
+          background: url(images/portfolio/screen2/instagram_logo.png) no-repeat bottom center; }
+        body .portfoliopage .screen2 .items_container .item.vsco {
+          background: url(images/portfolio/screen2/vsco.png) no-repeat right center #6d6d6d; }
+        body .portfoliopage .screen2 .items_container .item.vsco:hover {
+          background: url(images/portfolio/screen2/vsco_selected.png) no-repeat right center #6d6d6d; }
+        body .portfoliopage .screen2 .items_container .item.vsco:after {
+          content: "";
+          width: inherit;
+          height: inherit;
+          display: block;
+          background: url(images/portfolio/screen2/vsco_logo.png) no-repeat bottom center; }
+        body .portfoliopage .screen2 .items_container .item.yahoo {
+          background: url(images/portfolio/screen2/yahoo.png) no-repeat right center; }
+        body .portfoliopage .screen2 .items_container .item.yahoo:hover {
+          background: url(images/portfolio/screen2/yahoo_selected.png) no-repeat right center; }
+        body .portfoliopage .screen2 .items_container .item.yahoo:after {
+          content: "";
+          width: inherit;
+          height: inherit;
+          display: block;
+          background: url(images/portfolio/screen2/yahoo_logo.png) no-repeat bottom center; }
+        body .portfoliopage .screen2 .items_container .item.pinterest {
+          background: url(images/portfolio/screen2/pinterest.png) no-repeat right center #6d6d6d; }
+        body .portfoliopage .screen2 .items_container .item.pinterest:hover {
+          background: url(images/portfolio/screen2/pinterest_selected.png) no-repeat right center #6d6d6d; }
+        body .portfoliopage .screen2 .items_container .item.pinterest:after {
+          content: "";
+          width: inherit;
+          height: inherit;
+          display: block;
+          background: url(images/portfolio/screen2/pinterest_logo.png) no-repeat bottom center; }
+        body .portfoliopage .screen2 .items_container .item.googleplus {
+          background: url(images/portfolio/screen2/googleplus_selected.png) no-repeat right center; }
+        body .portfoliopage .screen2 .items_container .item.googleplus:hover {
+          background: url(images/portfolio/screen2/googleplus_selected.png) no-repeat right center #5b90f6; }
+        body .portfoliopage .screen2 .items_container .item.googleplus:after {
+          content: "";
+          width: inherit;
+          height: inherit;
+          display: block;
+          background: url(images/portfolio/screen2/googleplus_logo.png) no-repeat bottom center; }
+        body .portfoliopage .screen2 .items_container .item.youtube {
+          background: url(images/portfolio/screen2/youtube.png) no-repeat right center #6d6d6d; }
+        body .portfoliopage .screen2 .items_container .item.youtube:hover {
+          background: url(images/portfolio/screen2/youtube_selected.png) no-repeat right center #6d6d6d; }
+        body .portfoliopage .screen2 .items_container .item.youtube:after {
+          content: "";
+          width: inherit;
+          height: inherit;
+          display: block;
+          background: url(images/portfolio/screen2/youtube_logo.png) no-repeat bottom right; }

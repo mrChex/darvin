@@ -1,0 +1,101 @@
+body {
+  .portfoliopage {
+
+    $height: 791px;
+    $width: 1100px;
+
+    height: $height;
+    max-height: $height;
+    overflow: hidden;
+    min-width: $width;
+
+    .screen1 {
+      display: none;
+      background: url(images/portfolio/screen1/background.jpg) no-repeat center;
+      -moz-background-size: cover; /* Firefox 3.6+ */
+      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover; /* Opera 9.6+ */
+      background-size: cover;
+      z-index: 5;
+
+      .portfoliotext_container {
+        width: 110px * 2 + 811px + 35px;
+        margin-top: 250px;
+
+        .line {
+          margin-top: 25px;
+        }
+
+        .welcometext {
+          width: 811px;
+          height: 51px;
+          background: url(images/portfolio/screen1/welcome.png) no-repeat;
+          float: left;
+          margin-left: 35px;
+        }
+      }
+
+      .text {
+        font-family: BenderBold;
+        color: #fff;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+      }
+
+    } // .screen1
+
+    .screen2 {
+      background: #b5b5b5;
+
+      .items_container {
+        display: table;
+        width: 100%;
+        height: $height;
+
+        .item {
+          display: table-cell;
+          height: inherit;
+
+          &.instagram { background: url(images/portfolio/screen2/instagram.png) no-repeat right center; }
+          &.instagram:hover { background: url(images/portfolio/screen2/instagram_selected.png) no-repeat right center; }
+          &.instagram:after { content: ""; width: inherit; height: inherit; display: block;
+            background: url(images/portfolio/screen2/instagram_logo.png) no-repeat bottom center;
+          }
+
+          &.vsco { background: url(images/portfolio/screen2/vsco.png) no-repeat right center #6d6d6d; }
+          &.vsco:hover { background: url(images/portfolio/screen2/vsco_selected.png) no-repeat right center #6d6d6d; }
+          &.vsco:after { content: ""; width: inherit; height: inherit; display: block;
+            background: url(images/portfolio/screen2/vsco_logo.png) no-repeat bottom center;
+          }
+
+          &.yahoo { background: url(images/portfolio/screen2/yahoo.png) no-repeat right center; }
+          &.yahoo:hover { background: url(images/portfolio/screen2/yahoo_selected.png) no-repeat right center; }
+          &.yahoo:after { content: ""; width: inherit; height: inherit; display: block;
+            background: url(images/portfolio/screen2/yahoo_logo.png) no-repeat bottom center;
+          }
+
+          &.pinterest { background: url(images/portfolio/screen2/pinterest.png) no-repeat right center #6d6d6d; }
+          &.pinterest:hover { background: url(images/portfolio/screen2/pinterest_selected.png) no-repeat right center #6d6d6d; }
+          &.pinterest:after { content: ""; width: inherit; height: inherit; display: block;
+            background: url(images/portfolio/screen2/pinterest_logo.png) no-repeat bottom center;
+          }
+
+          &.googleplus { background: url(images/portfolio/screen2/googleplus_selected.png) no-repeat right center; }
+          &.googleplus:hover { background: url(images/portfolio/screen2/googleplus_selected.png) no-repeat right center #5b90f6; }
+          &.googleplus:after { content: ""; width: inherit; height: inherit; display: block;
+            background: url(images/portfolio/screen2/googleplus_logo.png) no-repeat bottom center;
+          }
+
+          &.youtube { background: url(images/portfolio/screen2/youtube.png) no-repeat right center #6d6d6d; }
+          &.youtube:hover { background: url(images/portfolio/screen2/youtube_selected.png) no-repeat right center #6d6d6d; }
+          &.youtube:after { content: ""; width: inherit; height: inherit; display: block;
+            background: url(images/portfolio/screen2/youtube_logo.png) no-repeat bottom right;
+          }
+
+        }
+      }
+    }
+
+  } // .portfoliopage
+} // body
