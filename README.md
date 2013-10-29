@@ -27,13 +27,14 @@ darvin
 - Верстка раздела our team screen5
 - Базовый слайдер для team
 - Верстка portfolio screen1
-
-В работе:
 - Верстка portfolio screen2
-- Верстка страницы детализации
-- Верстка portfolio screen3
 - Верстка portfolio screen4
 - Верстка portfolio screen5
+
+В работе:
+- Верстка portfolio screen3 (страницы детализации)
+- Верстка contacts
+- footer menu
 
 
 Необходимо реализовать:

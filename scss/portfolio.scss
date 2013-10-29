@@ -10,7 +10,6 @@ body {
     min-width: $width;
 
     .screen1 {
-      display: none;
       background: url(images/portfolio/screen1/background.jpg) no-repeat center;
       -moz-background-size: cover; /* Firefox 3.6+ */
       -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
@@ -47,6 +46,9 @@ body {
 
     .screen2 {
       background: #b5b5b5;
+      z-index: 4;
+      top: -( $height );
+      right: -100px;
 
       .items_container {
         display: table;
@@ -58,43 +60,139 @@ body {
           height: inherit;
 
           &.instagram { background: url(images/portfolio/screen2/instagram.png) no-repeat right center; }
-          &.instagram:hover { background: url(images/portfolio/screen2/instagram_selected.png) no-repeat right center; }
+          &.instagram:hover { background: url(images/portfolio/screen2/instagram_selected.png) no-repeat right center #5b90f6; }
           &.instagram:after { content: ""; width: inherit; height: inherit; display: block;
             background: url(images/portfolio/screen2/instagram_logo.png) no-repeat bottom center;
           }
 
           &.vsco { background: url(images/portfolio/screen2/vsco.png) no-repeat right center #6d6d6d; }
-          &.vsco:hover { background: url(images/portfolio/screen2/vsco_selected.png) no-repeat right center #6d6d6d; }
+          &.vsco:hover { background: url(images/portfolio/screen2/vsco_selected.png) no-repeat right center #5b90f6; }
           &.vsco:after { content: ""; width: inherit; height: inherit; display: block;
-            background: url(images/portfolio/screen2/vsco_logo.png) no-repeat bottom center;
+            background: url(images/portfolio/screen2/vsco_logo.png) no-repeat bottom 10px center;
           }
 
           &.yahoo { background: url(images/portfolio/screen2/yahoo.png) no-repeat right center; }
-          &.yahoo:hover { background: url(images/portfolio/screen2/yahoo_selected.png) no-repeat right center; }
+          &.yahoo:hover { background: url(images/portfolio/screen2/yahoo_selected.png) no-repeat right center #5b90f6; }
           &.yahoo:after { content: ""; width: inherit; height: inherit; display: block;
-            background: url(images/portfolio/screen2/yahoo_logo.png) no-repeat bottom center;
+            background: url(images/portfolio/screen2/yahoo_logo.png) no-repeat bottom 12px center;
           }
 
           &.pinterest { background: url(images/portfolio/screen2/pinterest.png) no-repeat right center #6d6d6d; }
-          &.pinterest:hover { background: url(images/portfolio/screen2/pinterest_selected.png) no-repeat right center #6d6d6d; }
+          &.pinterest:hover { background: url(images/portfolio/screen2/pinterest_selected.png) no-repeat right center #5b90f6; }
           &.pinterest:after { content: ""; width: inherit; height: inherit; display: block;
-            background: url(images/portfolio/screen2/pinterest_logo.png) no-repeat bottom center;
+            background: url(images/portfolio/screen2/pinterest_logo.png) no-repeat bottom 10px center;
           }
 
-          &.googleplus { background: url(images/portfolio/screen2/googleplus_selected.png) no-repeat right center; }
+          &.googleplus { background: url(images/portfolio/screen2/googleplus.png) no-repeat right center; }
           &.googleplus:hover { background: url(images/portfolio/screen2/googleplus_selected.png) no-repeat right center #5b90f6; }
           &.googleplus:after { content: ""; width: inherit; height: inherit; display: block;
             background: url(images/portfolio/screen2/googleplus_logo.png) no-repeat bottom center;
           }
 
           &.youtube { background: url(images/portfolio/screen2/youtube.png) no-repeat right center #6d6d6d; }
-          &.youtube:hover { background: url(images/portfolio/screen2/youtube_selected.png) no-repeat right center #6d6d6d; }
+          &.youtube:hover { background: url(images/portfolio/screen2/youtube_selected.png) no-repeat right center #5b90f6; }
           &.youtube:after { content: ""; width: inherit; height: inherit; display: block;
-            background: url(images/portfolio/screen2/youtube_logo.png) no-repeat bottom right;
+            background: url(images/portfolio/screen2/youtube_logo.png) no-repeat bottom 5px right;
+          }
+
+        } // .item
+      } // .items_container
+    } // .screen2
+
+    .screen3 {} // .screen3
+
+    .screen4 {
+      background: #414040;
+      z-index: 3;
+      top: -( $height * 2 );
+      right: -100px;
+
+      .factfeed {
+        background: url(images/portfolio/screen4/factfeed.png) no-repeat;
+        width: 331px;
+        height: 55px;
+        margin-top: 50px;
+      }
+
+      $blocks_count: 3;
+      $block_width: 296px;
+      $block_height: 460px;
+      $block_margin_left: 35px;
+
+      .blocks_container {
+        width: $block_width * $blocks_count + ( ($blocks_count - 1 ) * $block_margin_left );
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+
+        .block_container {
+          background: url(images/home/screen3/container_top.png) no-repeat top;
+          width: $block_width;
+          height: $block_height;
+          float: left;
+          margin-left: 10px;
+
+          .inside {
+            background: url(images/home/screen3/container_middle.png) repeat-y;
+            margin-top: 87px; // -1px hack for pretty zooming in safari
+            height: $block_height - 87px - 87px;
+            width: $block_width - 20px - 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 14pt;
+            font-family: Bender;
+
+            h2 {
+              font-family: BenderBold;
+              text-align: center;
+              text-transform: uppercase;
+            }
+          }
+
+          .bottom {
+            background: url(images/home/screen3/container_bottom.png) no-repeat bottom;
+            height: 88px;
+            margin-top: -1px; // hack for pretty zooming in safari
+            width: $block_width;
           }
 
         }
+
+        .width_margin_left {  // for second+ blocks
+          margin-left: $block_margin_left;
+        }
+
+      } // .blocks_container
+    } // .screen4
+
+    .screen5 {
+      background: #c2b7a2;
+      z-index: 2;
+      top: -( $height * 3 );
+      right: -100px;
+
+      .items_container {
+        margin-top: 200px;
+        display: table;
+        .item {
+          display: table-cell;
+          width: 300px;
+          padding-top: 170px;
+          padding-right: 10px;
+          padding-left: 10px;
+
+          hr {
+            width: 40px;
+            border-color: #000;
+            margin-left: 0px;
+          }
+        }
+
+        .strategy { background: url(images/portfolio/screen5/1.png) no-repeat top; }
+        .governance { background: url(images/portfolio/screen5/2.png) no-repeat top; }
+        .designing { background: url(images/portfolio/screen5/3.png) no-repeat top; }
       }
+
     }
 
   } // .portfoliopage
