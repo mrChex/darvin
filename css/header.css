@@ -14,6 +14,9 @@
   font-family: BenderBold;
   src: url("fonts/Bender/Jovanny Lemonad - Bender-Bold.otf"); }
 
+html, body {
+  height: 100%; }
+
 body {
   margin: 0px;
   background-color: #47c1a8;

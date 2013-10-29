@@ -1,0 +1,37 @@
+body .contactspage {
+  height: 88%; }
+  body .contactspage .screen1 {
+    height: 100%; }
+    body .contactspage .screen1 #map-canvas {
+      height: 55%; }
+    body .contactspage .screen1 .question {
+      height: 45%;
+      background: #2f3e51; }
+      body .contactspage .screen1 .question .shape {
+        height: 100%; }
+        body .contactspage .screen1 .question .shape .title {
+          background: url(images/contacts/slogan.png) no-repeat;
+          width: 541px;
+          height: 34px;
+          margin-top: 80px; }
+        body .contactspage .screen1 .question .shape .button:before {
+          content: "";
+          display: block;
+          background: url(images/contacts/button_left.png) no-repeat;
+          height: 50px;
+          width: 6px;
+          margin-left: -6px; }
+        body .contactspage .screen1 .question .shape .button {
+          background: url(images/contacts/button_background.png) repeat-x;
+          height: 50px;
+          width: 150px;
+          margin-top: 50px;
+          cursor: pointer; }
+          body .contactspage .screen1 .question .shape .button .inside {
+            background: url(images/contacts/button_right.png) no-repeat right;
+            height: 50px;
+            margin-top: -50px;
+            margin-left: 6px;
+            line-height: 50px;
+            font-family: BenderBold;
+            width: 100%; }
