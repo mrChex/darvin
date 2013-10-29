@@ -7,7 +7,6 @@ home_screen3_blocks = home_screen3_blocks_0 = home_screen3_blocks_1 = home_scree
 current_slide = 1
 $ ->
 	home_screen1 = $("#home_screen1")
-
 	home_screen2 = $("#home_screen2")
 	home_screen_2_theorytext = home_screen2.find('div.theorytext')
 	home_screen_2_line = home_screen2.find('div.line')
@@ -20,6 +19,12 @@ $ ->
 	home_screen3_blocks_2 = $ home_screen3_blocks[2]
 
 	home_screen4 = $("#home_screen4")
+
+	resize = ->
+		screen_height = home_screen1.height()
+		$(".screen2, .screen3, .screen4").css 'margin-top', "-#{screen_height}px"
+		return resize
+	$( window ).resize resize()
 
 	$("#next_slide").bind 'mousedown', ->
 		slider(++current_slide)

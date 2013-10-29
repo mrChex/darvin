@@ -14,6 +14,7 @@
   current_slide = 1;
 
   $(function() {
+    var resize;
     home_screen1 = $("#home_screen1");
     home_screen2 = $("#home_screen2");
     home_screen_2_theorytext = home_screen2.find('div.theorytext');
@@ -25,6 +26,13 @@
     home_screen3_blocks_1 = $(home_screen3_blocks[1]);
     home_screen3_blocks_2 = $(home_screen3_blocks[2]);
     home_screen4 = $("#home_screen4");
+    resize = function() {
+      var screen_height;
+      screen_height = home_screen1.height();
+      $(".screen2, .screen3, .screen4").css('margin-top', "-" + screen_height + "px");
+      return resize;
+    };
+    $(window).resize(resize());
     return $("#next_slide").bind('mousedown', function() {
       slider(++current_slide);
       if (current_slide === 4) {
