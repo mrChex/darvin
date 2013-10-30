@@ -1,138 +1,138 @@
 body .strategypage {
-  height: 791px;
-  max-height: 791px;
+  height: 88%;
+  min-height: 791px;
   overflow: hidden;
   min-width: 1100px; }
-  body .strategypage .screen1 {
-    background: url(images/strategy/screen1/background.jpg) no-repeat center #cccccc;
-    -moz-background-size: cover;
-    /* Firefox 3.6+ */
-    -webkit-background-size: cover;
-    /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: cover;
-    /* Opera 9.6+ */
-    background-size: cover;
-    z-index: 4; }
-    body .strategypage .screen1 .strategytext_container {
-      width: 850px;
-      margin-top: 150px; }
-      body .strategypage .screen1 .strategytext_container .line {
-        margin-top: 35px; }
-      body .strategypage .screen1 .strategytext_container .strategytext {
-        width: 606px;
-        height: 71px;
-        background: url(images/strategy/screen1/strategytext.png) no-repeat;
-        float: left;
-        margin-left: 25px; }
-    body .strategypage .screen1 .slogancontainer {
-      margin-top: 70px;
-      font-size: 30px;
-      color: #ffffff;
-      text-align: center;
-      font-family: BenderBold; }
-    body .strategypage .screen1 .descriptioncontainer {
-      margin-top: 100px;
-      opacity: 0.8;
-      width: 900px;
-      font-family: Bender;
-      font-size: 18px;
-      color: #ffffff; }
-  body .strategypage .screen2 {
-    background: url(images/strategy/screen2/background.jpg) no-repeat center #cccccc;
-    -moz-background-size: cover;
-    /* Firefox 3.6+ */
-    -webkit-background-size: cover;
-    /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: cover;
-    /* Opera 9.6+ */
-    background-size: cover;
-    z-index: 3;
-    top: -791px;
-    right: -100px; }
-    body .strategypage .screen2 ul.poligons_container {
-      margin-top: 100px;
-      width: 1090px;
-      padding-top: 150px;
-      height: 300px;
-      max-height: 300px;
-      overflow: hidden;
-      margin-left: auto;
-      margin-right: auto; }
-      body .strategypage .screen2 ul.poligons_container li {
-        display: block;
-        float: left;
-        width: 144px;
-        height: 126px;
-        line-height: 126px;
-        background: url(images/strategy/screen2/poligon.png) no-repeat;
-        margin-left: -25px;
+  body .strategypage .insidepage_container {
+    height: 100%; }
+    body .strategypage .insidepage_container .screen1 {
+      background: url(images/strategy/screen1/background.jpg) no-repeat center #cccccc;
+      -moz-background-size: cover;
+      /* Firefox 3.6+ */
+      -webkit-background-size: cover;
+      /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover;
+      /* Opera 9.6+ */
+      background-size: cover;
+      z-index: 4; }
+      body .strategypage .insidepage_container .screen1 .strategytext_container {
+        width: 850px;
+        margin-top: 150px; }
+        body .strategypage .insidepage_container .screen1 .strategytext_container .line {
+          margin-top: 35px; }
+        body .strategypage .insidepage_container .screen1 .strategytext_container .strategytext {
+          width: 606px;
+          height: 71px;
+          background: url(images/strategy/screen1/strategytext.png) no-repeat;
+          float: left;
+          margin-left: 25px; }
+      body .strategypage .insidepage_container .screen1 .slogancontainer {
+        margin-top: 70px;
+        font-size: 30px;
+        color: #ffffff;
         text-align: center;
-        font-size: 50px;
-        cursor: pointer; }
-        body .strategypage .screen2 ul.poligons_container li div.text {
-          line-height: normal;
-          font-size: 20px;
-          height: 55px;
-          margin-top: -55px;
-          color: #f6b900;
-          opacity: 0.8; }
-        body .strategypage .screen2 ul.poligons_container li span {
-          color: #ffffff; }
-        body .strategypage .screen2 ul.poligons_container li.first {
-          margin-left: -40px; }
-        body .strategypage .screen2 ul.poligons_container li.second {
-          margin-top: 63px; }
-          body .strategypage .screen2 ul.poligons_container li.second div.text {
-            margin-top: 5px; }
-        body .strategypage .screen2 ul.poligons_container li.selected {
-          background: url(images/strategy/screen2/poligon_big.png) no-repeat;
-          width: 289px;
-          height: 254px;
-          line-height: 254px;
-          margin-top: -63px;
-          font-size: 90px; }
-          body .strategypage .screen2 ul.poligons_container li.selected div.text {
-            font-family: BenderBold; }
-        body .strategypage .screen2 ul.poligons_container li.selected.second {
-          margin-top: 0px; }
-    body .strategypage .screen2 .description_container {
-      margin-top: 50px; }
-      body .strategypage .screen2 .description_container .triangle {
-        width: 60px;
-        height: 29px;
-        rotation: 10;
-        background: url(images/strategy/screen2/triangle.png);
+        font-family: BenderBold; }
+      body .strategypage .insidepage_container .screen1 .descriptioncontainer {
+        margin-top: 100px;
+        opacity: 0.8;
+        width: 900px;
+        font-family: Bender;
+        font-size: 18px;
+        color: #ffffff; }
+    body .strategypage .insidepage_container .screen2 {
+      background: url(images/strategy/screen2/background.jpg) no-repeat center #cccccc;
+      -moz-background-size: cover;
+      /* Firefox 3.6+ */
+      -webkit-background-size: cover;
+      /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover;
+      /* Opera 9.6+ */
+      background-size: cover;
+      z-index: 3;
+      right: -100px; }
+      body .strategypage .insidepage_container .screen2 ul.poligons_container {
+        margin-top: 100px;
+        width: 1090px;
+        padding-top: 150px;
+        height: 300px;
+        max-height: 300px;
+        overflow: hidden;
         margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        left: -420px; }
-      body .strategypage .screen2 .description_container .descriptions_text {
-        background: url(images/strategy/screen2/blue_back.png);
-        height: 150px;
-        padding-top: 20px;
-        font-size: 20px;
-        padding-top: 50px; }
-        body .strategypage .screen2 .description_container .descriptions_text .inside {
-          width: 900px;
+        margin-right: auto; }
+        body .strategypage .insidepage_container .screen2 ul.poligons_container li {
+          display: block;
+          float: left;
+          width: 144px;
+          height: 126px;
+          line-height: 126px;
+          background: url(images/strategy/screen2/poligon.png) no-repeat;
+          margin-left: -25px;
+          text-align: center;
+          font-size: 50px;
+          cursor: pointer; }
+          body .strategypage .insidepage_container .screen2 ul.poligons_container li div.text {
+            line-height: normal;
+            font-size: 20px;
+            height: 55px;
+            margin-top: -55px;
+            color: #f6b900;
+            opacity: 0.8; }
+          body .strategypage .insidepage_container .screen2 ul.poligons_container li span {
+            color: #ffffff; }
+          body .strategypage .insidepage_container .screen2 ul.poligons_container li.first {
+            margin-left: -40px; }
+          body .strategypage .insidepage_container .screen2 ul.poligons_container li.second {
+            margin-top: 63px; }
+            body .strategypage .insidepage_container .screen2 ul.poligons_container li.second div.text {
+              margin-top: 5px; }
+          body .strategypage .insidepage_container .screen2 ul.poligons_container li.selected {
+            background: url(images/strategy/screen2/poligon_big.png) no-repeat;
+            width: 289px;
+            height: 254px;
+            line-height: 254px;
+            margin-top: -63px;
+            font-size: 90px; }
+            body .strategypage .insidepage_container .screen2 ul.poligons_container li.selected div.text {
+              font-family: BenderBold; }
+          body .strategypage .insidepage_container .screen2 ul.poligons_container li.selected.second {
+            margin-top: 0px; }
+      body .strategypage .insidepage_container .screen2 .description_container {
+        margin-top: 50px; }
+        body .strategypage .insidepage_container .screen2 .description_container .triangle {
+          width: 60px;
+          height: 29px;
+          rotation: 10;
+          background: url(images/strategy/screen2/triangle.png);
           margin-left: auto;
           margin-right: auto;
-          color: #fff; }
-  body .strategypage .screen3 {
-    z-index: 2;
-    top: -1582px;
-    right: -100px;
-    background: #2d487b; }
-    body .strategypage .screen3 blockquote {
-      opacity: 1;
-      left: 0;
-      font-family: BenderBold; }
-    body .strategypage .screen3 .text_container {
-      width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 100px; }
-      body .strategypage .screen3 .text_container .text {
-        width: 425px;
-        float: left;
-        color: #fff;
-        opacity: 0.8; }
+          position: relative;
+          left: -420px; }
+        body .strategypage .insidepage_container .screen2 .description_container .descriptions_text {
+          background: url(images/strategy/screen2/blue_back.png);
+          height: 150px;
+          padding-top: 20px;
+          font-size: 20px;
+          padding-top: 50px; }
+          body .strategypage .insidepage_container .screen2 .description_container .descriptions_text .inside {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #fff; }
+    body .strategypage .insidepage_container .screen3 {
+      z-index: 2;
+      right: -100px;
+      background: #2d487b; }
+      body .strategypage .insidepage_container .screen3 blockquote {
+        opacity: 1;
+        left: 0;
+        font-family: BenderBold; }
+      body .strategypage .insidepage_container .screen3 .text_container {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px; }
+        body .strategypage .insidepage_container .screen3 .text_container .text {
+          width: 425px;
+          float: left;
+          color: #fff;
+          opacity: 0.8; }

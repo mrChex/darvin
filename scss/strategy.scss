@@ -6,184 +6,185 @@ body {
 
     $image_height: 393px;
 
-    height: $height;
-    max-height: $height;
+    height: 88%;
+    min-height: $height;
     overflow: hidden;
     min-width: $width;
 
-    .screen1 {
-      background: url(images/strategy/screen1/background.jpg) no-repeat center #ccc;
-      -moz-background-size: cover; /* Firefox 3.6+ */
-      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
-      -o-background-size: cover; /* Opera 9.6+ */
-      background-size: cover;
-      z-index: 4;
+    .insidepage_container {
+      height: 100%;
+
+      .screen1 {
+        background: url(images/strategy/screen1/background.jpg) no-repeat center #ccc;
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover;
+        z-index: 4;
 
 
-      .strategytext_container {
-        width: 850px;
-        margin-top: 150px;
+        .strategytext_container {
+          width: 850px;
+          margin-top: 150px;
 
-        .line {
-          margin-top: 35px;
+          .line {
+            margin-top: 35px;
+          }
+
+          .strategytext {
+            width: 606px;
+            height: 71px;
+            background: url(images/strategy/screen1/strategytext.png) no-repeat;
+            float: left;
+            margin-left: 25px;
+          }
         }
 
-        .strategytext {
-          width: 606px;
-          height: 71px;
-          background: url(images/strategy/screen1/strategytext.png) no-repeat;
-          float: left;
-          margin-left: 25px;
-        }
-      }
 
-
-      .slogancontainer {
-        margin-top: 70px;
-        font-size: 30px;
-        color: #ffffff;
-        text-align: center;
-        font-family: BenderBold;
-      }
-
-      .descriptioncontainer {
-        margin-top: 100px;
-        opacity: 0.8;
-        width: 900px;
-        font-family: Bender;
-        font-size: 18px;
-        color: #ffffff;
-      }
-
-    } // .screen1
-
-    .screen2 {
-      background: url(images/strategy/screen2/background.jpg) no-repeat center #ccc;
-      -moz-background-size: cover; /* Firefox 3.6+ */
-      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
-      -o-background-size: cover; /* Opera 9.6+ */
-      background-size: cover;
-      z-index: 3;
-      top: -$height;
-      right: -100px;
-
-      ul.poligons_container {
-        margin-top: 100px;
-        width: 1090px;
-        //display: block;
-        padding-top: 150px;
-        height: 300px;
-        max-height: 300px;
-        overflow: hidden;
-        margin-left: auto;
-        margin-right: auto;
-
-        li {
-          display: block;
-          float:left;
-          width: 144px;
-          height: 126px;
-          line-height: 126px;
-          background: url(images/strategy/screen2/poligon.png) no-repeat;
-          margin-left: -25px;
+        .slogancontainer {
+          margin-top: 70px;
+          font-size: 30px;
+          color: #ffffff;
           text-align: center;
-          font-size: 50px;
-          cursor: pointer;
+          font-family: BenderBold;
+        }
 
-          div.text {
-            $textheight: 55px;
-            line-height: normal;
-            font-size: 20px;
-            height: $textheight;
-            margin-top: -$textheight;
-            color: #f6b900;
-            opacity: 0.8;
-          }
+        .descriptioncontainer {
+          margin-top: 100px;
+          opacity: 0.8;
+          width: 900px;
+          font-family: Bender;
+          font-size: 18px;
+          color: #ffffff;
+        }
 
-          span { color: #ffffff; }
+      } // .screen1
 
-          &.first {
-            margin-left: -40px;
-          }
+      .screen2 {
+        background: url(images/strategy/screen2/background.jpg) no-repeat center #ccc;
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover;
+        z-index: 3;
+        right: -100px;
 
-          &.second {
-            margin-top: 63px;
-            div.text { margin-top: 5px; }
-          }
-
-          &.selected {
-            background: url(images/strategy/screen2/poligon_big.png) no-repeat;
-            width: 289px;
-            height: 254px;
-            line-height: 254px;
-            margin-top: -63px;
-            font-size: 90px;
-
-            div.text { font-family: BenderBold; }
-          }
-
-          &.selected.second {
-            margin-top: 0px;
-          }
-        } // li
-      } // ul.poligons_container
-
-      .description_container {
-        margin-top: 50px;
-        .triangle {
-          width: 60px;
-          height: 29px;
-          rotation: 10;
-          background: url(images/strategy/screen2/triangle.png);
+        ul.poligons_container {
+          margin-top: 100px;
+          width: 1090px;
+          //display: block;
+          padding-top: 150px;
+          height: 300px;
+          max-height: 300px;
+          overflow: hidden;
           margin-left: auto;
           margin-right: auto;
-          position: relative;
-          left: -420px;
-        }
 
-        .descriptions_text {
-          background: url(images/strategy/screen2/blue_back.png);
-          height: 150px;
-          padding-top: 20px;
-          font-size: 20px;
-          padding-top: 50px;
-          .inside {
-            width: 900px;
+          li {
+            display: block;
+            float:left;
+            width: 144px;
+            height: 126px;
+            line-height: 126px;
+            background: url(images/strategy/screen2/poligon.png) no-repeat;
+            margin-left: -25px;
+            text-align: center;
+            font-size: 50px;
+            cursor: pointer;
+
+            div.text {
+              $textheight: 55px;
+              line-height: normal;
+              font-size: 20px;
+              height: $textheight;
+              margin-top: -$textheight;
+              color: #f6b900;
+              opacity: 0.8;
+            }
+
+            span { color: #ffffff; }
+
+            &.first {
+              margin-left: -40px;
+            }
+
+            &.second {
+              margin-top: 63px;
+              div.text { margin-top: 5px; }
+            }
+
+            &.selected {
+              background: url(images/strategy/screen2/poligon_big.png) no-repeat;
+              width: 289px;
+              height: 254px;
+              line-height: 254px;
+              margin-top: -63px;
+              font-size: 90px;
+
+              div.text { font-family: BenderBold; }
+            }
+
+            &.selected.second {
+              margin-top: 0px;
+            }
+          } // li
+        } // ul.poligons_container
+
+        .description_container {
+          margin-top: 50px;
+          .triangle {
+            width: 60px;
+            height: 29px;
+            rotation: 10;
+            background: url(images/strategy/screen2/triangle.png);
             margin-left: auto;
             margin-right: auto;
+            position: relative;
+            left: -420px;
+          }
+
+          .descriptions_text {
+            background: url(images/strategy/screen2/blue_back.png);
+            height: 150px;
+            padding-top: 20px;
+            font-size: 20px;
+            padding-top: 50px;
+            .inside {
+              width: 900px;
+              margin-left: auto;
+              margin-right: auto;
+              color: #fff;
+            }
+          }
+
+        } // .description_container
+
+
+      } // .screen2
+
+      .screen3 {
+        z-index: 2;
+        right: -100px;
+        background: #2d487b;
+        blockquote {
+          opacity: 1;
+          left: 0;
+          font-family: BenderBold;
+        }
+
+        .text_container {
+          width: 900px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 100px;
+          .text {
+            width: 425px;
+            float: left;
             color: #fff;
+            opacity: 0.8;
           }
         }
-
-      } // .description_container
-
-
-    } // .screen2
-
-    .screen3 {
-      z-index: 2;
-      top: -( $height * 2 );
-      right: -100px;
-      background: #2d487b;
-      blockquote {
-        opacity: 1;
-        left: 0;
-        font-family: BenderBold;
-      }
-
-      .text_container {
-        width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 100px;
-        .text {
-          width: 425px;
-          float: left;
-          color: #fff;
-          opacity: 0.8;
-        }
-      }
-    } // .screen3
-
+      } // .screen3
+    } // .insidepage_container
   } // .strategypage
 } // body

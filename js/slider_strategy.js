@@ -6,8 +6,13 @@
   };
 
   $(function() {
-    var current_slide;
+    var current_slide, resize;
     current_slide = 0;
+    resize = function() {
+      $(".screen2, .screen3").css('margin-top', "-" + ($('.screen1').height()) + "px");
+      return resize;
+    };
+    $(window).resize(resize());
     $("div.screen2 ul.poligons_container>li").on('click', function(e) {
       var page, triangle_settings;
       $("div.screen2 ul.poligons_container>li").removeClass('selected');

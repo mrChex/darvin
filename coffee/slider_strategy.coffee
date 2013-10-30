@@ -3,6 +3,11 @@ get_window_width =-> window.document.body.offsetWidth
 $ ->
 	current_slide = 0
 
+	resize =->
+		$(".screen2, .screen3").css 'margin-top', "-#{$('.screen1').height()}px"
+		return resize
+	$( window ).resize resize()
+
 	$("div.screen2 ul.poligons_container>li").on 'click', (e)->
 		$("div.screen2 ul.poligons_container>li").removeClass 'selected'
 		$(e.currentTarget).addClass 'selected'
