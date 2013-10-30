@@ -4,324 +4,324 @@ body {
     $height: 791px;
     $width: 1100px;
 
-    height: $height;
-    max-height: $height;
+    height: 88%;
+    min-height: $height;
     overflow: hidden;
     min-width: $width;
 
-    .screen1 {
-      background: url(images/team/screen1/background.jpg) no-repeat center #ccc;
-      -moz-background-size: cover; /* Firefox 3.6+ */
-      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
-      -o-background-size: cover; /* Opera 9.6+ */
-      background-size: cover;
-      z-index: 5;
-      top: -1px;
+    .insidepage_container {
+      height: 100%;
 
-      .teamtext_container {
-        width: 850px;
-        margin-top: 250px;
+      .screen1 {
+        background: url(images/team/screen1/background.jpg) no-repeat center #ccc;
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover;
+        z-index: 5;
+        top: -1px;
 
-        .line {
-          margin-top: 35px;
+        .teamtext_container {
+          width: 850px;
+          margin-top: 250px;
+
+          .line {
+            margin-top: 35px;
+          }
+
+          .teamtext {
+            width: 583px;
+            height: 71px;
+            background: url(images/team/screen1/teamtext.png) no-repeat;
+            float: left;
+            margin-left: 35px;
+          }
         }
 
-        .teamtext {
-          width: 583px;
-          height: 71px;
-          background: url(images/team/screen1/teamtext.png) no-repeat;
-          float: left;
-          margin-left: 35px;
-        }
-      }
-
-      blockquote {
-        display: block;
-        opacity: 1;
-        left: 0px;
-        top: 50px;
-      }
-
-    } // .screen1
-
-    .screen2 {
-      z-index: 4;
-      top: -( $height );
-      right: -100px;
-      background: url(images/team/screen2/background.png) repeat-x center #1f2534;
-
-      .hexagon {
-        width: 552px;
-        height: 500px;
-        background: url(images/team/screen2/hexagon_background1.png) no-repeat;
-        margin-top: 100px;
-
-        .face {
+        blockquote {
           display: block;
-          float:left;
-          width: 73px;
-          height: 101px;
-          background: url(images/team/screen2/face.png) no-repeat;
-          float:left;
-          position: relative;
+          opacity: 1;
+          left: 0px;
+          top: 50px;
         }
 
-        .face.selected { background: url(images/team/screen2/face_selected.png) no-repeat;}
+      } // .screen1
 
-        .face1 {
-          margin-left: 89px;
-          top: -51px;
-        }
+      .screen2 {
+        z-index: 4;
+        right: -100px;
+        background: url(images/team/screen2/background.png) repeat-x center #1f2534;
 
-        .face2 {
-          margin-left: 225px;
-          top: -51px;
-        }
-
-        .face3 {
-          margin-top: 91px;
-          left: -46px;
-        }
-
-        .face4 {
-          margin-top: 91px;
-          right: -449px;
-        }
-
-        .face5 {
-          top: 160px;
-          left: 90px;
-        }
-        .face6 {
-          top: 160px;
-          left: 310px;
-        }
-
-        .text_container {
+        .hexagon {
           width: 552px;
           height: 500px;
-          margin-top: -394px;
+          background: url(images/team/screen2/hexagon_background1.png) no-repeat;
+          margin-top: 100px;
 
-          .inside {
-            color: #fff;
-            margin-top: 30px;
-            text-align: center;
-            h1 {
-              font-family: BenderBold;
-              color: #f6b900;
-              font-size: 28px;
-              margin: 0px;
-              padding: 0px;
-            }
-            p {
-              font-family: BenderLight;
-              margin: 0px;
-              padding: 0px;
-            }
+          .face {
+            display: block;
+            float:left;
+            width: 73px;
+            height: 101px;
+            background: url(images/team/screen2/face.png) no-repeat;
+            float:left;
+            position: relative;
+          }
 
-            hr {
-              width: 50px;
-              opacity: 0.2;
-              margin-left: 185px;
-            }
+          .face.selected { background: url(images/team/screen2/face_selected.png) no-repeat;}
 
-            div.percents {
-              font-size: 30px;
-              color: #f6b900;
-              float: left;
-              margin-right: 10px;
-            }
+          .face1 {
+            margin-left: 89px;
+            top: -51px;
+          }
 
-            .skill_container {
-              .skill_title {
-                width:200px;
-                text-align: right;
-                float: left;
+          .face2 {
+            margin-left: 225px;
+            top: -51px;
+          }
+
+          .face3 {
+            margin-top: 91px;
+            left: -46px;
+          }
+
+          .face4 {
+            margin-top: 91px;
+            right: -449px;
+          }
+
+          .face5 {
+            top: 160px;
+            left: 90px;
+          }
+          .face6 {
+            top: 160px;
+            left: 310px;
+          }
+
+          .text_container {
+            width: 552px;
+            height: 500px;
+            margin-top: -394px;
+
+            .inside {
+              color: #fff;
+              margin-top: 30px;
+              text-align: center;
+              h1 {
+                font-family: BenderBold;
+                color: #f6b900;
+                font-size: 28px;
+                margin: 0px;
+                padding: 0px;
+              }
+              p {
+                font-family: BenderLight;
+                margin: 0px;
+                padding: 0px;
               }
 
-              .skill_bar {
-                height:30px;
-                width: 200px;
+              hr {
+                width: 50px;
+                opacity: 0.2;
+                margin-left: 185px;
+              }
+
+              div.percents {
+                font-size: 30px;
+                color: #f6b900;
+                float: left;
+                margin-right: 10px;
+              }
+
+              .skill_container {
+                .skill_title {
+                  width:200px;
+                  text-align: right;
+                  float: left;
+                }
+
+                .skill_bar {
+                  height:30px;
+                  width: 200px;
+                  margin-left: 10px;
+                  float:left;
+                  .skill_inside:before {
+                    content: "";
+                    width: 5px;
+                    height: 19px;
+                    background: url(images/team/screen2/skill_left.png) no-repeat center;
+                    display: block;
+                    margin-left:-5px;
+                    float:left;
+                  }
+                  .skill_inside {
+                    background: url(images/team/screen2/skill_center.png) repeat-x center;
+                    height: 19px;
+                    margin-left: 4px;
+                    float:left;
+                  }
+                  .skill_inside:after {
+                    content: "";
+                    display: block;
+                    width: 21px;
+                    height: 19px;
+                    background: url(images/team/screen2/skill_right.png) no-repeat center;
+                    float:right;
+                    margin-right: -10px;
+                  }
+                } // .skill_bar
+              } // .skill_container
+
+              .social {
+                float: left;
                 margin-left: 10px;
-                float:left;
-                .skill_inside:before {
-                  content: "";
-                  width: 5px;
-                  height: 19px;
-                  background: url(images/team/screen2/skill_left.png) no-repeat center;
-                  display: block;
-                  margin-left:-5px;
-                  float:left;
-                }
-                .skill_inside {
-                  background: url(images/team/screen2/skill_center.png) repeat-x center;
-                  height: 19px;
-                  margin-left: 4px;
-                  float:left;
-                }
-                .skill_inside:after {
-                  content: "";
-                  display: block;
-                  width: 21px;
-                  height: 19px;
-                  background: url(images/team/screen2/skill_right.png) no-repeat center;
-                  float:right;
-                  margin-right: -10px;
-                }
-              } // .skill_bar
-            } // .skill_container
+              }
+             } // .inside
+          } // .text_container
+        } // .hexagon
+      } // .screen2
 
-            .social {
-              float: left;
-              margin-left: 10px;
-            }
-           } // .inside
-        } // .text_container
-      } // .hexagon
-    } // .screen2
+      .screen3 {
+        z-index: 3;
+        right: -100px;
+        background: #f6b900;
 
-    .screen3 {
-      z-index: 3;
-      top: -( $height * 2 );
-      right: -100px;
-      background: #f6b900;
-
-      .teamfacts {
-        background: url(images/team/screen3/teamfacts.png) no-repeat;
-        width: 392px;
-        height: 55px;
-        margin-top:100px;
-      }
-
-      .teamfacts_table {
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
-        margin-top: 100px;
-        th {
-          height: 108px;
-          min-width: 127px;
-        }
-        th.animals { background: url(images/team/screen3/animals.png) no-repeat center; }
-        th.earth { background: url(images/team/screen3/earth.png) no-repeat center; }
-        th.pizza { background: url(images/team/screen3/pizza.png) no-repeat center; }
-        th.excited { background: url(images/team/screen3/excited.png) no-repeat center; }
-        th.calendar { background: url(images/team/screen3/calendar.png) no-repeat center; }
-
-        td {
-          text-align: center;
-          font-size: 18px;
-          h2 {
-            color: #fff;
-            font-family: BenderBold;
-            font-size: 28px;
-            margin-bottom: 5px;
-          }
-        }
-      }
-
-    } // .screen3
-
-    .screen4 {
-      z-index: 2;
-      top: -( $height * 3 );
-      right: -100px;
-      background: #5b90f6;
-
-      .affiliations {
-        margin-top: 80px;
-        background: url(images/team/screen4/affiliations.png) no-repeat;
-        width: 443px;
-        height: 56px;
-      }
-
-      .affiliations_items {
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-
-        .item {
-          display: table-cell;
-          width: 180px;
-          height: 207px;
-          padding-right: 10px;
+        .teamfacts {
+          background: url(images/team/screen3/teamfacts.png) no-repeat;
+          width: 392px;
+          height: 55px;
+          margin-top:100px;
         }
 
-        &.first_row {
+        .teamfacts_table {
+          margin-left: auto;
+          margin-right: auto;
+          width: 70%;
           margin-top: 100px;
+          th {
+            height: 108px;
+            min-width: 127px;
+          }
+          th.animals { background: url(images/team/screen3/animals.png) no-repeat center; }
+          th.earth { background: url(images/team/screen3/earth.png) no-repeat center; }
+          th.pizza { background: url(images/team/screen3/pizza.png) no-repeat center; }
+          th.excited { background: url(images/team/screen3/excited.png) no-repeat center; }
+          th.calendar { background: url(images/team/screen3/calendar.png) no-repeat center; }
+
+          td {
+            text-align: center;
+            font-size: 18px;
+            h2 {
+              color: #fff;
+              font-family: BenderBold;
+              font-size: 28px;
+              margin-bottom: 5px;
+            }
+          }
         }
 
-        &.second_row {
-          top: -43px;
-          position: relative;
+      } // .screen3
+
+      .screen4 {
+        z-index: 2;
+        right: -100px;
+        background: #5b90f6;
+
+        .affiliations {
+          margin-top: 80px;
+          background: url(images/team/screen4/affiliations.png) no-repeat;
+          width: 443px;
+          height: 56px;
         }
 
-        .clearph { background: url(images/team/screen4/clearph.png) no-repeat center; }
-        .minutes111 { background: url(images/team/screen4/111.png) no-repeat center; }
-        .mindstudios { background: url(images/team/screen4/mindstudios.png) no-repeat center; }
-        .apple { background: url(images/team/screen4/apple.png) no-repeat center; }
-        .android { background: url(images/team/screen4/android.png) no-repeat center; }
+        .affiliations_items {
+          display: table;
+          margin-left: auto;
+          margin-right: auto;
 
-        .windows { background: url(images/team/screen4/windows.png) no-repeat center; }
-        .google { background: url(images/team/screen4/google.png) no-repeat center; }
-        .blackberry { background: url(images/team/screen4/blackberry.png) no-repeat center; }
-        .kindle { background: url(images/team/screen4/kindle.png) no-repeat center; }
-        .html5 { background: url(images/team/screen4/html5.png) no-repeat center; }
-        .wp { background: url(images/team/screen4/wp.png) no-repeat center; }
-      }
-
-    } // .screen4
-
-    .screen5 {
-      z-index: 1;
-      top: -( $height * 4 );
-      right: -100px;
-      background: #1f2534;
-
-      .socialhub_container {
-        display: table;
-        height: 790px;
-        margin-left: auto;
-        margin-right: auto;
-
-        .item {
-          display: table-cell;
-          overflow: hidden;
-          height: inherit;
-          width: 150px;
-          max-width: 150px;
-
-          &.selected { width: 400px; max-width: 400px; }
-
-          .inside {
-            width: 400px;
-            min-width: 400px;
-            max-width: 400px;
-            height: 600px;
-            margin-top: 180px;
+          .item {
+            display: table-cell;
+            width: 180px;
+            height: 207px;
+            padding-right: 10px;
           }
 
-          &.pinterest {
-            background: url(images/team/screen5/pinterest.png) no-repeat left 10px top 80px #cb2026;
+          &.first_row {
+            margin-top: 100px;
           }
 
-          &.twitter {
-            background: url(images/team/screen5/twitter.png) no-repeat left 10px top 80px #1ec5ff;
+          &.second_row {
+            top: -43px;
+            position: relative;
           }
 
-          &.facebook {
-            background: url(images/team/screen5/facebook.png) no-repeat left 10px top 80px #3757a8;
-          }
+          .clearph { background: url(images/team/screen4/clearph.png) no-repeat center; }
+          .minutes111 { background: url(images/team/screen4/111.png) no-repeat center; }
+          .mindstudios { background: url(images/team/screen4/mindstudios.png) no-repeat center; }
+          .apple { background: url(images/team/screen4/apple.png) no-repeat center; }
+          .android { background: url(images/team/screen4/android.png) no-repeat center; }
 
-          &.vine {
-            background: url(images/team/screen5/vine.png) no-repeat left 10px top 80px #00a579;
-          }
+          .windows { background: url(images/team/screen4/windows.png) no-repeat center; }
+          .google { background: url(images/team/screen4/google.png) no-repeat center; }
+          .blackberry { background: url(images/team/screen4/blackberry.png) no-repeat center; }
+          .kindle { background: url(images/team/screen4/kindle.png) no-repeat center; }
+          .html5 { background: url(images/team/screen4/html5.png) no-repeat center; }
+          .wp { background: url(images/team/screen4/wp.png) no-repeat center; }
+        }
 
-          &.linkedin {
-            background: url(images/team/screen5/linkedin.png) no-repeat left 10px top 80px #1380ba;
-          }
-        } // .item
-      } // .socialhub_container
-    } // .screen5
+      } // .screen4
+
+      .screen5 {
+        z-index: 1;
+        right: -100px;
+        background: #1f2534;
+
+        .socialhub_container {
+          display: table;
+          height: 100%;
+          margin-left: auto;
+          margin-right: auto;
+
+          .item {
+            display: table-cell;
+            overflow: hidden;
+            height: inherit;
+            width: 150px;
+            max-width: 150px;
+
+            &.selected { width: 400px; max-width: 400px; }
+
+            .inside {
+              width: 400px;
+              min-width: 400px;
+              max-width: 400px;
+              height: 600px;
+              margin-top: 180px;
+            }
+
+            &.pinterest {
+              background: url(images/team/screen5/pinterest.png) no-repeat left 10px top 80px #cb2026;
+            }
+
+            &.twitter {
+              background: url(images/team/screen5/twitter.png) no-repeat left 10px top 80px #1ec5ff;
+            }
+
+            &.facebook {
+              background: url(images/team/screen5/facebook.png) no-repeat left 10px top 80px #3757a8;
+            }
+
+            &.vine {
+              background: url(images/team/screen5/vine.png) no-repeat left 10px top 80px #00a579;
+            }
+
+            &.linkedin {
+              background: url(images/team/screen5/linkedin.png) no-repeat left 10px top 80px #1380ba;
+            }
+          } // .item
+        } // .socialhub_container
+      } // .screen5
+    } // .insidepage_container
   } // .teampage
 } // body
