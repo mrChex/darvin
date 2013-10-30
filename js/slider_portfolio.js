@@ -6,8 +6,13 @@
   };
 
   $(function() {
-    var current_slide;
+    var current_slide, resize;
     current_slide = 0;
+    resize = function() {
+      $(".screen2, .screen3, .screen4, .screen5").css('margin-top', "-" + ($('.screen1').height()) + "px");
+      return resize;
+    };
+    $(window).resize(resize());
     return $("#next_slide").on('click', function() {
       current_slide++;
       if (current_slide === 4) {
