@@ -1,10 +1,113 @@
 body footer {
   background: url(images/header/background.jpg) black;
   height: 70px;
-  line-height: 70px;
   min-width: 1100px;
   margin-top: -1px; }
-  body footer .copyright {
-    float: left;
-    color: #909090;
-    margin-left: 50px; }
+  body footer .social {
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 20px; }
+    body footer .social a {
+      display: block;
+      float: left;
+      margin-left: 15px;
+      width: 30px;
+      height: 30px; }
+    body footer .social .pinterest {
+      background: url(images/footer/pin-grey.png) no-repeat; }
+    body footer .social .pinterest:hover {
+      background: url(images/footer/pin-blue.png) no-repeat; }
+    body footer .social .twitter {
+      background: url(images/footer/twit-grey.png) no-repeat; }
+    body footer .social .twitter:hover {
+      background: url(images/footer/twit-blue.png) no-repeat; }
+    body footer .social .facebook {
+      background: url(images/footer/face-grey.png) no-repeat; }
+    body footer .social .facebook:hover {
+      background: url(images/footer/face-blue.png) no-repeat; }
+    body footer .social .vine {
+      background: url(images/footer/vine-grey.png) no-repeat; }
+    body footer .social .vine:hover {
+      background: url(images/footer/vine-blue.png) no-repeat; }
+    body footer .social .linkedin {
+      background: url(images/footer/in-grey.png) no-repeat;
+      width: 31px; }
+    body footer .social .linkedin:hover {
+      background: url(images/footer/in-blue.png) no-repeat; }
+  body footer .container {
+    width: 100%;
+    line-height: 70px; }
+    body footer .container .copyright {
+      float: left;
+      color: #909090;
+      margin-left: 50px; }
+    body footer .container .social {
+      width: 300px;
+      float: right;
+      margin-top: 5px; }
+    body footer .container .open {
+      width: 49px;
+      height: 46px;
+      background: url(images/footer/close.png) no-repeat;
+      margin-right: 20px;
+      cursor: pointer;
+      float: right;
+      margin-top: 12px; }
+  body footer .slide_container {
+    opacity: 0;
+    display: none;
+    height: 300px;
+    margin-top: -300px;
+    position: relative;
+    z-index: 20;
+    background-color: #212627;
+    color: #fff; }
+    body footer .slide_container .inside table {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      max-height: 100%; }
+      body footer .slide_container .inside table td.social, body footer .slide_container .inside table td.contacts {
+        width: 300px; }
+      body footer .slide_container .inside table td.title {
+        width: 543px;
+        height: 60px;
+        background: url(images/footer/title.png) no-repeat center; }
+      body footer .slide_container .inside table td.form textarea, body footer .slide_container .inside table td.form input {
+        display: block;
+        width: 520px;
+        border: 3px solid #d9d9d9;
+        border-radius: 4px;
+        padding: 9px;
+        font-family: Bender;
+        font-size: 20px; }
+      body footer .slide_container .inside table td.form textarea {
+        height: 130px; }
+      body footer .slide_container .inside table td.form input {
+        background: url(images/footer/mail.png) no-repeat left 8px center white;
+        width: 489px;
+        padding-left: 40px; }
+      body footer .slide_container .inside table td.contacts {
+        padding-left: 30px; }
+        body footer .slide_container .inside table td.contacts .contacts_inside {
+          border-left: 1px dashed #ffffff;
+          padding-left: 30px; }
+        body footer .slide_container .inside table td.contacts h2 {
+          margin-bottom: 0; }
+        body footer .slide_container .inside table td.contacts hr {
+          margin-left: 10px;
+          width: 50px;
+          border-color: #f6b900; }
+        body footer .slide_container .inside table td.contacts .title {
+          float: left;
+          width: 80px; }
+        body footer .slide_container .inside table td.contacts .text {
+          float: left; }
+      body footer .slide_container .inside table .close {
+        float: right;
+        width: 49px;
+        height: 46px;
+        background: url(images/footer/close.png) no-repeat;
+        margin-right: 20px;
+        cursor: pointer; }

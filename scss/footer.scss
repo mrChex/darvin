@@ -4,15 +4,152 @@ body {
   footer {
     background: url(images/header/background.jpg) #000000;
     height: $height;
-    line-height: $height;
     min-width: 1100px;
     margin-top: -1px;
+    .social {
+      height: 100%;
+      padding-top: 15px;
+      padding-left: 20px;
+      a {
+        display: block;
+        float: left;
+        margin-left: 15px;
+        width: 30px;
+        height: 30px;
+      }
 
-    .copyright {
-      float: left;
-      color: #909090;
-      margin-left: 50px;
+      .pinterest { background: url(images/footer/pin-grey.png) no-repeat }
+      .pinterest:hover { background: url(images/footer/pin-blue.png) no-repeat }
+
+      .twitter { background: url(images/footer/twit-grey.png) no-repeat }
+      .twitter:hover { background: url(images/footer/twit-blue.png) no-repeat }
+
+      .facebook { background: url(images/footer/face-grey.png) no-repeat }
+      .facebook:hover { background: url(images/footer/face-blue.png) no-repeat }
+
+      .vine { background: url(images/footer/vine-grey.png) no-repeat }
+      .vine:hover { background: url(images/footer/vine-blue.png) no-repeat }
+
+      .linkedin { background: url(images/footer/in-grey.png) no-repeat; width: 31px; }
+      .linkedin:hover { background: url(images/footer/in-blue.png) no-repeat }
     }
 
+    .container {
+      width: 100%;
+      line-height: $height;
+      .copyright {
+        float: left;
+        color: #909090;
+        margin-left: 50px;
+      }
+
+      .social {
+        width: 300px;
+        float:right;
+        margin-top: 5px;
+      }
+
+      .open {
+        width: 49px;
+        height: 46px;
+        background: url(images/footer/close.png) no-repeat;
+        margin-right: 20px;
+        cursor: pointer;
+        float: right;
+        margin-top: 12px;
+      }
+    }
+
+    .slide_container {
+      opacity: 0;
+      display: none;
+      height: 300px;
+      margin-top: -300px;
+      position: relative;
+      z-index: 20;
+      background-color: #212627;
+      color: #fff;
+
+
+      .inside {
+
+        table {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          max-height: 100%;
+
+          td.social, td.contacts {
+            width: 300px;
+          }
+
+          td.title {
+            width: 543px;
+            height: 60px;
+            background: url(images/footer/title.png) no-repeat center;
+          }
+
+          td.form {
+
+            textarea, input {
+              display: block;
+              width: 520px;
+              border: 3px solid #d9d9d9;
+              border-radius: 4px;
+              padding: 9px;
+              font-family: Bender;
+              font-size: 20px;
+            }
+            textarea {
+              height: 130px;
+            }
+            input {
+              background: url(images/footer/mail.png) no-repeat left 8px center #ffffff;
+              width: 489px;
+              padding-left: 40px;
+            }
+          }
+
+          td.contacts {
+            padding-left: 30px;
+
+            .contacts_inside {
+              border-left: 1px dashed #ffffff;
+              padding-left: 30px;
+            }
+
+            h2 {
+              margin-bottom: 0;
+            }
+            hr {
+              margin-left: 10px;
+              width: 50px;
+              border-color: #f6b900;
+            }
+
+            .title {
+              float: left;
+              width: 80px;
+            }
+
+            .text {
+              float:left;
+            }
+          }
+
+          .close {
+            float:right;
+            width: 49px;
+            height: 46px;
+            background: url(images/footer/close.png) no-repeat;
+            margin-right: 20px;
+            cursor: pointer;
+          }
+
+        }
+
+      }
+    }
   }
 }
