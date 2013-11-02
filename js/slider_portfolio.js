@@ -18,7 +18,6 @@
       if (current_slide === 4) {
         $(this).css('display', 'none');
       }
-      console.log('slide', current_slide, $("div.screen" + current_slide));
       $("div.screen" + current_slide).animate({
         'left': -(get_window_width())
       }, {
@@ -32,7 +31,11 @@
       $("div.screen" + (current_slide + 1)).animate({
         'right': 0
       });
-      return console.log('slide', current_slide, $("div.screen" + current_slide));
+      return $("div.screen" + (current_slide + 1) + ">*").css('opacity', 0).animate({
+        'opacity': 1
+      }, {
+        duration: 1000
+      });
     });
   });
 

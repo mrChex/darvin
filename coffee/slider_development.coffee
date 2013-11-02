@@ -24,3 +24,4 @@ $ ->
 		$(e.target).css display: 'none'
 		$("#development_screen1").animate {left: -(get_window_width())}, complete: -> $(@).css 'opacity', 0
 		$("#development_screen2").animate {right: 0}
+		$("#development_screen2>*").css('opacity', 0).animate {'opacity': 1}, duration: 1000

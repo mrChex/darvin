@@ -52,8 +52,13 @@
           return $(this).css('opacity', 0);
         }
       });
-      return $("#development_screen2").animate({
+      $("#development_screen2").animate({
         right: 0
+      });
+      return $("#development_screen2>*").css('opacity', 0).animate({
+        'opacity': 1
+      }, {
+        duration: 1000
       });
     });
   });

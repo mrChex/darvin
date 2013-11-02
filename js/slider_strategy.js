@@ -51,8 +51,13 @@
           return $(this).css('opacity', 0);
         }
       });
-      return $("div.screen" + (current_slide + 1)).animate({
+      $("div.screen" + (current_slide + 1)).animate({
         'right': 0
+      });
+      return $("div.screen" + (current_slide + 1) + ">*").css('opacity', 0).animate({
+        'opacity': 1
+      }, {
+        duration: 1000
       });
     });
   });
