@@ -117,12 +117,19 @@ body .portfoliopage {
         margin-left: auto;
         margin-right: auto;
         margin-top: 100px; }
+        body .portfoliopage .insidepage_container .screen4 .blocks_container .block1 {
+          top: -150px; }
+        body .portfoliopage .insidepage_container .screen4 .blocks_container .block2 {
+          bottom: -150px; }
+        body .portfoliopage .insidepage_container .screen4 .blocks_container .block3 {
+          top: -150px; }
         body .portfoliopage .insidepage_container .screen4 .blocks_container .block_container {
           background: url(images/home/screen3/container_top.png) no-repeat top;
           width: 296px;
           height: 460px;
           float: left;
-          margin-left: 10px; }
+          margin-left: 10px;
+          position: relative; }
           body .portfoliopage .insidepage_container .screen4 .blocks_container .block_container .inside {
             background: url(images/home/screen3/container_middle.png) repeat-y;
             margin-top: 87px;

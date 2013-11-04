@@ -31,11 +31,21 @@
       $("div.screen" + (current_slide + 1)).animate({
         'right': 0
       });
-      return $("div.screen" + (current_slide + 1) + ">*").css('opacity', 0).animate({
+      $("div.screen" + (current_slide + 1) + ">*").css('opacity', 0).animate({
         'opacity': 1
       }, {
         duration: 1000
       });
+      if (current_slide === 3) {
+        return setTimeout(function() {
+          $("div.screen" + (current_slide + 1) + " .block1, div.screen" + (current_slide + 1) + " .block3").animate({
+            'top': 0
+          });
+          return $("div.screen" + (current_slide + 1) + " .block2").animate({
+            'bottom': 0
+          });
+        }, 150);
+      }
     });
   });
 

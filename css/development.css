@@ -6,7 +6,7 @@ body .developmentpage {
   body .developmentpage .insidepage_container {
     height: 100%; }
     body .developmentpage .insidepage_container .screen1 {
-      background: #313536; }
+      background: url(images/development/background.png) repeat-x bottom #313536; }
       body .developmentpage .insidepage_container .screen1 table {
         padding: 0;
         margin: 0;
