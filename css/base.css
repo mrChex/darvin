@@ -13,6 +13,9 @@
   z-index: 10;
   cursor: pointer; }
 
+.next_slide:hover {
+  background: url(images/home/next_slide.png) no-repeat; }
+
 .shape {
   background: url(images/home/shape.png) top center;
   width: inherit;
