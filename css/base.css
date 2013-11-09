@@ -52,6 +52,10 @@ blockquote {
     float: right;
     color: #f6b900; }
 
+.cl {
+  clear: both;
+  font-size: 0px; }
+
 .social {
   width: 43px;
   height: 37px;
