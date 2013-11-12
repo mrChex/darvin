@@ -23,6 +23,11 @@
 
             google.maps.event.addDomListener(window, 'load', initialize);
         </script>
+        <script>
+            $(function(){
+                $('.blog_side').css('height', $('.blog_content').height());
+            })
+        </script>
 
     </head>
     <body class="blog_bg">
@@ -47,7 +52,7 @@
             <!-- .table_box -->
             <div class="table_box">
                 <!-- .blog_content -->
-                <section class="blog_content">
+                <section class="blog_content single">
                     <!-- .blog_title -->
                     <div class="blog_title"></div>
                     <!-- /.blog_title -->
@@ -55,23 +60,46 @@
                     <div class="blog_post">
                         <span class="post_date">17 aug 2013</span>
                         <a href="" class="post_poster"><img src="images/blog/tmp_image.png" alt=""></a>
-                        <h2 class="post_title"><a href="">UNDER THE HOOD: OtUR TOP 10 SITES FOR DESIGN INSPIRATION</a></h2>
-                        <article>
-                            <p>Every week at Fueled, our London-based lead designer Rob Palmer shares a handful of inspirational websites with our teams in New York and…</p>
+                        <h2 class="post_title decore_line"><a href="">UNDER THE HOOD: OtUR TOP 10 SITES FOR DESIGN INSPIRATION</a></h2>
+                        <article class="single_post">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                            </p>
                         </article>
                     </div>
                     <!-- /.blog_post -->
-                    <!-- .blog_post -->
-                    <div class="blog_post">
-                        <span class="post_date">17 aug 2013</span>
-                        <a href="" class="post_poster"><img src="images/blog/tmp_image.png" alt=""></a>
-                        <h2 class="post_title"><a href="">UNDER THE HOOD: OtUR TOP 10 SITES FOR DESIGN INSPIRATION</a></h2>
-                        <article>
-                            <p>Every week at Fueled, our London-based lead designer Rob Palmer shares a handful of inspirational websites with our teams in New York and…</p>
-                        </article>
+                    <!-- .blog_post_comments -->
+                    <div class="blog_post_comments">
+                        <div class="comment_header">
+                            <a href="" class="add_comment">Add comment</a>
+                            <span class="comments_count">2 comments</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="comment_avatar">
+                                    <img src="images/blog/avatar.png" alt="">
+                                </div>
+                                <div class="comment_comment">
+                                    <h3 class="comment_author decore_line">Kayle Rise</h3>
+                                    <article class="comment_cont">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </article>
+                                </div>
+                            </li>
+                            <li class="response" style="padding-left: 50px;">
+                                <div class="comment_avatar">
+                                    <img src="images/blog/avatar.png" alt="">
+                                </div>
+                                <div class="comment_comment">
+                                    <h3 class="comment_author decore_line">Kayle Rise</h3>
+                                    <article class="comment_cont">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </article>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- /.blog_post -->
-                    <a href="#" class="blog_more"></a>
+                    <!-- /.blog_post_comments -->
                 </section>
                 <!-- /.blog_content -->
                 <!-- .bloside -->
