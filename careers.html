@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Darvin title</title>
+        <link href="styles.css" rel="stylesheet" media="screen">
+        <script src="js/jquery-2.0.2.min.js"></script>
+        <script src="js/slider_contacts.js"></script>
+        <script src="js/footer.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="height=device-height;">
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script>
+            var map;
+            function initialize() {
+              var mapOptions = {
+                zoom: 8,
+                center: new google.maps.LatLng(-34.397, 150.644),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+              };
+              map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        <script>
+            $(function(){
+                $('.career_side').css('height', $('.career_content').height());
+                
+                $('.career_side a').each(function(){
+                    var sh = $(this).height();
+                    var side = sh - 2
+                    // var sides = Math.pow(side, 2)*2;
+                    // var diag = Math.sqrt(sides);
+                    // var diff = diag - side;
+                    // var result = side - (diff-(diff/3));
+                    // console.log(diag)
+                    // console.log(side)
+                    // console.log(result)
+                    // var triangleHeight = (triangleHeightStart/2)-1;
+                    // var triangleLeft = (triangleHeight + 'px ' + '14px ' + triangleHeight + 'px ' + '0');
+                    // var triangleRight = (triangleHeight + 'px ' + '0px ' + triangleHeight + 'px ' + '14px');
+                    // $(this).find('.left_triang').css('border-width', triangleLeft);
+                    // $(this).find('.right_triang').css('border-width', triangleRight);
+                    $(this).find('.sq').css('height', side).css('width', side);
+                    $(this).find('.left_triang').css('height', side).css('width', side).css('left', -side);
+                    $(this).find('.right_triang').css('height', side).css('width', side).css('right', -side);
+                });
+            })
+        </script>
+
+    </head>
+    <body class="blog_bg">
+
+        <header>
+            <div class="container">
+                <a href="home.html" class="logo"></a>
+
+                <a href="home.html" class="home">HOME<div></div></a>
+                <a href="development.html" class="development">DEVELOPMENT<div></div></a>
+                <a href="strategy.html" class="development">OUR STRATEGY<div></div></a>
+                <a href="team.html" class="team">OUR TEAM<div></div></a>
+                <a href="portfolio.html" class="portfolio">PORTFOLIO<div></div></a>
+                <a href="contacts.html" class="contactus active">CONTACT US<div></div></a>
+
+                <div style="clear:both;"></div>
+            </div>
+        </header>
+
+
+        <div class="careerpage">
+            <!-- .table_box -->
+            <div class="table_box">
+                <!-- .bloside -->
+                <aside class="career_side">
+                    <ul>
+                        <li>
+                            <a href="" class="active">
+                                <span class="link_content">Web Designer</span>
+                                <span class="left_triang"><span class="sq"></span></span>
+                                <span class="right_triang"><span class="sq"></span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="link_content">Sales Executive</span>
+                                <span class="left_triang"></span>
+                                <span class="right_triang"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="link_content">Senior iOS Developer</span>
+                                <span class="left_triang"></span>
+                                <span class="right_triang"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- /.bloside -->
+                <!-- .blog_content -->
+                <section class="career_content">
+                    <!-- .blog_title -->
+                    <div class="career_title"></div>
+                    <!-- /.blog_title -->
+                    <!-- .career_list -->
+                    <div class="career_list">
+                        <h3 class="decore_line">Main Duties:</h3>
+                        <ul>
+                            <li>
+                                <p>Design and build a variety of websites and web interfaces for the company's sales force, corporate sites and intranet. </p>
+                            </li>
+                            <li>
+                                <p>Be able to concept website designs and hand-code HTML/CSS (experience with Javascript/ jquery, mobile phone development and Flash is a plus)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.career_list -->
+                    <!-- .career_list -->
+                    <div class="career_list">
+                        <h3 class="decore_line">Qualifications:</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    3 years of experience in Web Design in a business or agency environment.
+                                    Extensive knowledge of Mac & PC based systems, Photoshop and HTML editors (such as Dreamweaver). 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Experience with Flash, After Effects, InDesign and Illustrator.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Cross-browser HTML and CSS coding - understanding of HTML 5, PHP or ASP is helpful.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Acrobat Professional, Word, PowerPoint, Excel and Outlook sufficient to create documents and e-mails.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.career_list -->
+                    <!-- .career_list -->
+                    <div class="career_list">
+                        <h3 class="decore_line">Educational/Previous Experience Requirements:</h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Bachelor's degree (B.A.) preferred.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Forward your resume to <a href="">jobs@darwinlogic.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.career_list -->
+                </section>
+                <!-- /.blog_content -->
+                <div class="cl"></div><!-- clearfix -->
+            </div>
+            <!-- /.table_box -->
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="copyright">&copy; 2014. Darwin Logic.</div>
+
+                <!-- reversed -->
+                <div class="open"></div>
+                <div class="social">
+                    <a href="http://pinterest.com/" class="pinterest"></a>
+                    <a href="http://twitter.com/" class="twitter"></a>
+                    <a href="http://facebook.com/" class="facebook"></a>
+                    <a href="http://vine.co/" class="vine"></a>
+                    <a href="http://linkedin.com/" class="linkedin"></a>
+                </div>
+            </div>
+            <div style="clear:left;"></div>
+            <div class="slide_container"><div class="inside">
+                <table>
+                    <tr>
+                        <td style="width: 20%;"></td>
+                        <td class="title"></td>
+                        <td class="social">
+                            <a href="http://pinterest.com/" class="pinterest"></a>
+                            <a href="http://twitter.com/" class="twitter"></a>
+                            <a href="http://facebook.com/" class="facebook"></a>
+                            <a href="http://vine.co/" class="vine"></a>
+                            <a href="http://linkedin.com/" class="linkedin"></a>
+                        </td>
+                        <td style="width: 20%;"><div class="close"></div></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="form">
+                            <form method="POST" action="#">
+                                <textarea>Message</textarea>
+                                <input value="Email"  />
+                            </form>
+                        </td>
+                        <td class="contacts"><div class="contacts_inside">
+                            <h2>Contact Details</h2>
+                            <hr>
+                            <div class="title">Address:</div>
+                            <div class="text">6606 Coper Ridge Tr,<br>Bradenton, Florida,<br>34201</div>
+                            <div style="clear: left;"></div><br>
+                            <div class="title">Mobile:</div>
+                            <div class="text">(321)34-LOGIC</div>
+                            <div style="clear: left"></div><br>
+                            <div class="title">Email:</div>
+                            <div class="text">Hello@darwinlogic.com</div>
+                            <div style="clear: left"></div>
+                        </div></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div></div>
+        </footer>
+
+    </body>
+</html>

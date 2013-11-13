@@ -1,0 +1,133 @@
+body {
+    .careerpage {
+        min-width: 1100px;
+        margin: 0;
+        background: url(images/career/background.png) no-repeat 0 0;
+        background-size: 100%;
+        color: #fff;
+        .table_box {
+            width: 900px;
+            margin: 0 auto;
+            padding-left: 10px;
+            .career_side {
+                float: left;
+                width: 260px;
+                padding-top: 250px;
+                background: rgba(255, 255, 255, .08);
+                ul {
+                    width: 196px;
+                    margin: 0 auto;
+                    padding-left: 0;
+                    list-style: none;
+                    li {
+                        margin-bottom: 15px;
+                        a {
+                            display: block;
+                            position: relative;
+                            color: #fff;
+                            text-decoration: none;
+                            &.active {
+                                color: #000;
+                                background: #fff;
+                                -webkit-box-shadow:  0px 0px 20px 3px rgba(1, 1, 1, .2);
+                                box-shadow:  0px 0px 20px 3px rgba(1, 1, 1, .2);
+                                span.left_triang, span.right_triang {
+                                    display: block;
+                                }
+                            }
+                            span.link_content {
+                                display: block;
+                                padding: 15px 20px;
+                            }
+                            span.left_triang {
+                                position: absolute;
+                                top: 0px;
+                                left: -10px;
+                                overflow: hidden;
+                                .sq {
+                                    position: relative;
+                                    display: block;
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                    -moz-transform: rotate(45deg);
+                                    -ms-transform: rotate(45deg);
+                                    background: #fff;
+                                    right: -50%;
+                                }
+                            }
+                            span.right_triang {
+                                position: absolute;
+                                top: 0px;
+                                right: -10px;
+                                overflow: hidden;
+                                .sq {
+                                    position: relative;
+                                    display: block;
+                                    transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                    -moz-transform: rotate(45deg);
+                                    -ms-transform: rotate(45deg);
+                                    background: #fff;
+                                    left: -50%;
+                                }
+                            }
+                            // span.left_triang {
+                            //     display: none;
+                            //     position: absolute;
+                            //     top: 0px;
+                            //     left: -14px;
+                            //     width: 0px;
+                            //     height: 0px;
+                            //     border-style: solid;
+                            //     border-color: transparent #fff transparent transparent;
+                            // }
+                            // span.right_triang {
+                            //     display: none;
+                            //     position: absolute;
+                            //     top: 0px;
+                            //     right: -14px;
+                            //     width: 0px;
+                            //     height: 0px;
+                            //     border-style: solid;
+                            //     border-color: transparent transparent transparent #fff;
+                            // }
+                        }
+                    }
+                }
+            }
+            .career_content {
+                width: 640px;
+                float: left;
+                padding-top: 130px;
+                color: #fff;
+                a {
+                    color: #f6b900;
+                }
+                .career_title {
+                    display: block;
+                    width: 636px;
+                    height: 58px;
+                    margin-left: 40px;
+                    background: url(images/career/title.png) no-repeat 0 0;
+                    margin-bottom: 60px;
+                }
+                .career_list {
+                    padding-left: 44px;
+                    margin-bottom: 43px;
+                    ul {
+                        padding-left: 0;
+                        list-style: none;
+                        li {
+                            font-size: .8em;
+                            line-height: 1.6;
+                            border-top: 1px solid #3b4041;
+                            &:nth-child(1) {
+                                border-top: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
