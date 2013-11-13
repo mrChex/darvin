@@ -30,18 +30,6 @@
                 $('.career_side a').each(function(){
                     var sh = $(this).height();
                     var side = sh - 2
-                    // var sides = Math.pow(side, 2)*2;
-                    // var diag = Math.sqrt(sides);
-                    // var diff = diag - side;
-                    // var result = side - (diff-(diff/3));
-                    // console.log(diag)
-                    // console.log(side)
-                    // console.log(result)
-                    // var triangleHeight = (triangleHeightStart/2)-1;
-                    // var triangleLeft = (triangleHeight + 'px ' + '14px ' + triangleHeight + 'px ' + '0');
-                    // var triangleRight = (triangleHeight + 'px ' + '0px ' + triangleHeight + 'px ' + '14px');
-                    // $(this).find('.left_triang').css('border-width', triangleLeft);
-                    // $(this).find('.right_triang').css('border-width', triangleRight);
                     $(this).find('.sq').css('height', side).css('width', side);
                     $(this).find('.left_triang').css('height', side).css('width', side).css('left', -side);
                     $(this).find('.right_triang').css('height', side).css('width', side).css('right', -side);
