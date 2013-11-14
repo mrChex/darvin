@@ -2,73 +2,118 @@
   background: url(images/home/screen4/1.png) no-repeat;
   width: 104px;
   height: 120px; }
+  .hexagon1 b {
+    margin-left: 10px;
+    margin-top: 30px; }
 
 .hexagon2 {
   background: url(images/home/screen4/2.png) no-repeat;
   width: 116px;
   height: 134px; }
+  .hexagon2 b {
+    margin-left: 10px;
+    margin-top: 30px; }
 
 .hexagon3 {
   background: url(images/home/screen4/3.png) no-repeat;
   width: 180px;
   height: 207px; }
+  .hexagon3 b {
+    margin-left: 10px;
+    margin-top: 55px; }
 
 .hexagon4 {
   background: url(images/home/screen4/4.png) no-repeat;
   width: 88px;
   height: 100px; }
+  .hexagon4 b {
+    margin-left: 5px;
+    margin-top: 25px; }
 
 .hexagon5 {
   background: url(images/home/screen4/5.png) no-repeat;
   width: 120px;
   height: 137px; }
+  .hexagon5 b {
+    margin-left: 10px;
+    margin-top: 35px; }
 
 .hexagon6 {
   background: url(images/home/screen4/6.png) no-repeat;
   width: 188px;
   height: 217px; }
+  .hexagon6 b {
+    margin-left: 10px;
+    margin-top: 65px; }
 
 .hexagon7 {
   background: url(images/home/screen4/7.png) no-repeat;
   width: 234px;
   height: 271px; }
+  .hexagon7 b {
+    margin-left: 15px;
+    margin-top: 70px; }
 
 .hexagon8 {
   background: url(images/home/screen4/8.png) no-repeat;
   width: 173px;
   height: 201px; }
+  .hexagon8 b {
+    margin-left: 10px;
+    margin-top: 50px; }
 
 .hexagon9 {
   background: url(images/home/screen4/9.png) no-repeat;
   width: 241px;
   height: 277px; }
+  .hexagon9 b {
+    margin-left: 13px;
+    margin-top: 70px; }
 
 .hexagon10 {
   background: url(images/home/screen4/10.png) no-repeat;
   width: 156px;
   height: 179px; }
+  .hexagon10 b {
+    margin-left: 10px;
+    margin-top: 45px; }
 
 .hexagon11 {
   background: url(images/home/screen4/11.png) no-repeat;
   width: 91px;
   height: 105px; }
+  .hexagon11 b {
+    margin-left: 5px;
+    margin-top: 30px; }
 
 .hexagon12 {
   background: url(images/home/screen4/12.png) no-repeat;
   width: 105px;
   height: 123px; }
+  .hexagon12 b {
+    margin-left: 10px;
+    margin-top: 30px; }
 
 .hexagon13 {
   background: url(images/home/screen4/13.png) no-repeat;
   width: 132px;
   height: 151px; }
+  .hexagon13 b {
+    margin-left: 10px;
+    margin-top: 35px; }
 
 .hexagon14 {
   background: url(images/home/screen4/14.png) no-repeat;
   width: 143px;
   height: 165px; }
+  .hexagon14 b {
+    margin-left: 10px;
+    margin-top: 40px; }
 
 .hexagon16 {
   background: url(images/home/screen4/16.png) no-repeat;
   width: 132px;
   height: 161px; }
+  .hexagon16 b {
+    margin-left: 10px;
+    margin-top: 40px; }

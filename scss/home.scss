@@ -132,8 +132,8 @@ body {
         -o-background-size: cover; /* Opera 9.6+ */
         background-size: cover;
 
-        z-index: 1;
-        right: -100px;
+        z-index: 10;
+        //right: -100px;
 
         .container {
           $height_container: 700px;
@@ -156,6 +156,14 @@ body {
                   display: block;
                   float: left;
                   margin-left: 10px;
+                  text-decoration: none;
+
+                  b {
+                    display: none;
+                    font-weight: normal;
+                    color: #000000;
+                    font-family: Bender;
+                  }
                 }
 
                 .hexagon:HOVER {
@@ -164,6 +172,8 @@ body {
                   -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
                   -o-background-size: cover; /* Opera 9.6+ */
                   background-size: cover;
+
+                  b { display: block; }
                 }
 
               }

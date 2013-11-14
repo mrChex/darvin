@@ -97,8 +97,7 @@ body .homepage {
       -o-background-size: cover;
       /* Opera 9.6+ */
       background-size: cover;
-      z-index: 1;
-      right: -100px; }
+      z-index: 10; }
       body .homepage .insidepage_container .screen4 .container {
         height: 700px;
         overflow: hidden;
@@ -117,7 +116,13 @@ body .homepage {
               body .homepage .insidepage_container .screen4 .container .infinite_loop_container .infinite_loop_inside .infinite_loop_target .hexagon {
                 display: block;
                 float: left;
-                margin-left: 10px; }
+                margin-left: 10px;
+                text-decoration: none; }
+                body .homepage .insidepage_container .screen4 .container .infinite_loop_container .infinite_loop_inside .infinite_loop_target .hexagon b {
+                  display: none;
+                  font-weight: normal;
+                  color: #000000;
+                  font-family: Bender; }
               body .homepage .insidepage_container .screen4 .container .infinite_loop_container .infinite_loop_inside .infinite_loop_target .hexagon:HOVER {
                 background: url(images/home/screen4/what_we_have_and_what_we_do.png) no-repeat;
                 -moz-background-size: cover;
@@ -127,3 +132,5 @@ body .homepage {
                 -o-background-size: cover;
                 /* Opera 9.6+ */
                 background-size: cover; }
+                body .homepage .insidepage_container .screen4 .container .infinite_loop_container .infinite_loop_inside .infinite_loop_target .hexagon:HOVER b {
+                  display: block; }
