@@ -97,7 +97,8 @@ body .homepage {
       -o-background-size: cover;
       /* Opera 9.6+ */
       background-size: cover;
-      z-index: 10; }
+      z-index: 1;
+      right: -100px; }
       body .homepage .insidepage_container .screen4 .container {
         height: 700px;
         overflow: hidden;
