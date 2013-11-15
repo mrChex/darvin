@@ -6,18 +6,23 @@
   };
 
   $(function() {
-    var current_slide, resize;
+    var current_slide, resize, slide_back, slide_next;
     current_slide = 0;
     resize = function() {
       $(".screen2, .screen3, .screen4, .screen5").css('margin-top', "-" + ($('.screen1').height()) + "px");
       return resize;
     };
     $(window).resize(resize());
-    return $("#next_slide").on('click', function() {
-      current_slide++;
-      if (current_slide === 4) {
-        $(this).css('display', 'none');
+    slide_next = function() {
+      if (current_slide === 3) {
+        return;
       }
+      if (current_slide === 2) {
+        $("#next_slide").css('display', 'none');
+      } else {
+        $("#next_slide").css('display', 'block');
+      }
+      current_slide++;
       $("div.screen" + current_slide).animate({
         'left': -(get_window_width())
       }, {
@@ -25,9 +30,6 @@
           return $(this).css('opacity', 0);
         }
       });
-      if (current_slide === 2) {
-        current_slide = 3;
-      }
       $("div.screen" + (current_slide + 1)).animate({
         'right': 0
       });
@@ -36,7 +38,7 @@
       }, {
         duration: 1000
       });
-      if (current_slide === 3) {
+      if (current_slide === 2) {
         return setTimeout(function() {
           $("div.screen" + (current_slide + 1) + " .block1, div.screen" + (current_slide + 1) + " .block3").animate({
             'top': 0
@@ -46,7 +48,30 @@
           });
         }, 150);
       }
+    };
+    slide_back = function() {
+      if (current_slide === 0) {
+        return;
+      }
+      $("#next_slide").css('display', 'block');
+      console.log('slide_back', current_slide);
+      $("div.screen" + current_slide).css('opacity', 1).animate({
+        'left': 0
+      });
+      $("div.screen" + (current_slide + 1)).animate({
+        'right': -100
+      });
+      return current_slide--;
+    };
+    $(document).keydown(function(e) {
+      if (e.which === 39) {
+        return slide_next();
+      }
+      if (e.which === 37) {
+        return slide_back();
+      }
     });
+    return $("#next_slide").on('click', slide_next);
   });
 
 }).call(this);

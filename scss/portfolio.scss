@@ -101,9 +101,7 @@ body {
         } // .items_container
       } // .screen2
 
-      .screen3 {} // .screen3
-
-      .screen4 {
+      .screen3 {
         background: #414040;
         z-index: 3;
         right: -100px;
@@ -169,9 +167,9 @@ body {
           }
 
         } // .blocks_container
-      } // .screen4
+      } // .screen3
 
-      .screen5 {
+      .screen4 {
         background: #c2b7a2;
         z-index: 2;
         right: -100px;
@@ -198,7 +196,7 @@ body {
           .designing { background: url(images/portfolio/screen5/3.png) no-repeat top; }
         }
 
-      } // .screen5
+      } // .screen4
     } // .insidepage_container
   } // .portfoliopage
 } // body
