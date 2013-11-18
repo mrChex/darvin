@@ -28,9 +28,9 @@ $ ->
 		$("div.screen2 .description_container>.descriptions_text div[data-page=#{page}]").animate opacity: 1
 
 	slide_next =->
-		if current_slide == 2 then return
+		if current_slide == 2 then return window.location = "team.html"
 		current_slide++
-		if current_slide == 2 then $("#next_slide").css 'display', 'none'
+#		if current_slide == 2 then $("#next_slide").css 'display', 'none'
 		console.log 'slide', current_slide, $("div.screen#{current_slide}")
 		$("div.screen#{current_slide}").animate {'left': -(get_window_width())}, complete: -> $(@).css 'opacity', 0
 		$("div.screen#{current_slide+1}").animate {'right': 0}

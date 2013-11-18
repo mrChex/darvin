@@ -43,13 +43,12 @@
       });
     });
     slide_next = function() {
-      if (current_slide === 1) {
+      console.log('next slide', current_slide);
+      if (current_slide >= 1) {
+        window.location = "strategy.html";
         return;
       }
       current_slide++;
-      $("#next_slide").css({
-        display: 'none'
-      });
       $("#development_screen1").animate({
         left: -(get_window_width())
       }, {
@@ -71,9 +70,6 @@
         return;
       }
       current_slide--;
-      $("#next_slide").css({
-        display: 'block'
-      });
       $("#development_screen1").css('opacity', 1).animate({
         left: 0
       });
@@ -81,7 +77,7 @@
         right: -100
       });
     };
-    $("#next_slide").one('click', slide_next);
+    $("#next_slide").on('click', slide_next);
     return $(document).keydown(function(e) {
       if (e.which === 39) {
         return slide_next();

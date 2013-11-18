@@ -80,15 +80,17 @@ $ ->
 			screen2_hide -> screen3_show()
 		else if screenI is 4
 			screen3_hide -> screen4_show()
+		else if screenI >= 4
+			window.location = "development.html"
 
 		return yes
 
 	next_slide =->
 		console.log 'next slide'
-		if current_slide == 4 then return $("#next_slide").css 'opacity', 0
+#		if current_slide == 4 then return $("#next_slide").css 'opacity', 0
 		current_slide++
 		slider(current_slide)
-		if current_slide == 4 then return $("#next_slide").css 'opacity', 0
+#		if current_slide == 4 then return $("#next_slide").css 'opacity', 0
 
 	slider_back =->
 		if current_slide == 0 then return

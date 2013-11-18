@@ -40,12 +40,9 @@
     });
     slide_next = function() {
       if (current_slide === 2) {
-        return;
+        return window.location = "team.html";
       }
       current_slide++;
-      if (current_slide === 2) {
-        $("#next_slide").css('display', 'none');
-      }
       console.log('slide', current_slide, $("div.screen" + current_slide));
       $("div.screen" + current_slide).animate({
         'left': -(get_window_width())

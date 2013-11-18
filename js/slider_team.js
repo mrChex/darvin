@@ -15,12 +15,9 @@
     $(window).resize(resize());
     slide_next = function() {
       if (current_slide === 4) {
-        return;
+        return window.location = "portfolio.html";
       }
       current_slide++;
-      if (current_slide === 4) {
-        $("#next_slide").css('display', 'none');
-      }
       console.log('slide', current_slide, $("div.screen" + current_slide));
       $("div.screen" + current_slide).animate({
         'left': -(get_window_width())

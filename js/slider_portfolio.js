@@ -15,12 +15,7 @@
     $(window).resize(resize());
     slide_next = function() {
       if (current_slide === 3) {
-        return;
-      }
-      if (current_slide === 2) {
-        $("#next_slide").css('display', 'none');
-      } else {
-        $("#next_slide").css('display', 'block');
+        return window.location = "contacts.html";
       }
       current_slide++;
       $("div.screen" + current_slide).animate({

@@ -164,19 +164,15 @@
         screen3_hide(function() {
           return screen4_show();
         });
+      } else if (screenI >= 4) {
+        window.location = "development.html";
       }
       return true;
     };
     next_slide = function() {
       console.log('next slide');
-      if (current_slide === 4) {
-        return $("#next_slide").css('opacity', 0);
-      }
       current_slide++;
-      slider(current_slide);
-      if (current_slide === 4) {
-        return $("#next_slide").css('opacity', 0);
-      }
+      return slider(current_slide);
     };
     slider_back = function() {
       if (current_slide === 0) {

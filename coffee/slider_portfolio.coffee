@@ -9,8 +9,8 @@ $ ->
 	$( window ).resize resize()
 
 	slide_next =->
-		if current_slide == 3 then return
-		if current_slide == 2 then $("#next_slide").css('display', 'none') else $("#next_slide").css 'display', 'block'
+		if current_slide == 3 then return window.location = "contacts.html"
+#		if current_slide == 2 then $("#next_slide").css('display', 'none') else $("#next_slide").css 'display', 'block'
 		current_slide++
 		$("div.screen#{current_slide}").animate {'left': -(get_window_width())}, complete: -> $(@).css 'opacity', 0
 		$("div.screen#{current_slide+1}").animate {'right': 0}
