@@ -7,14 +7,14 @@
   position: absolute;
   width: 61px;
   height: 72px;
-  background: url(images/home/next_slide.png) no-repeat;
+  background: url(images/next_slide_1.png) no-repeat;
   top: 80px;
   right: 50px;
   z-index: 10;
   cursor: pointer; }
 
 .next_slide:HOVER {
-  background: url(images/home/next_slide.gif) no-repeat; }
+  background: url(images/next_slide_2.png) no-repeat; }
 
 .shape {
   background: url(images/home/shape.png) top center;
