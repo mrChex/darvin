@@ -8,14 +8,12 @@
   position: absolute;
   width: 61px;
   height: 72px;
-  background: url(images/next_slide_1.png) no-repeat;
+  //background: url(images/next_slide_1.png) no-repeat;
   top: 80px;
   right: 50px;
   z-index: 10;
   cursor: pointer;
-}
 
-.next_slide:HOVER {
   background-image: url("images/sprite.png");
 
   -webkit-animation: play .8s steps(6) infinite;
