@@ -1,5 +1,6 @@
 (function() {
   $(function() {
+    var n, next_slide_i;
     $("footer .open").on('click', function() {
       return $("footer .slide_container").css({
         display: 'block'
@@ -7,7 +8,7 @@
         opacity: 1
       });
     });
-    return $("footer .close").on('click', function() {
+    $("footer .close").on('click', function() {
       return $("footer .slide_container").animate({
         opacity: 0
       }, {
@@ -18,6 +19,8 @@
         }
       });
     });
+    next_slide_i = 1;
+    return n = $("#next_slide");
   });
 
 }).call(this);
