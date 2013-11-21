@@ -12,11 +12,11 @@
   z-index: 10;
   cursor: pointer;
   background-image: url("images/sprite.png");
-  -webkit-animation: play 1.6s steps(6) infinite;
-  -moz-animation: play 1.6s steps(6) infinite;
-  -ms-animation: play 1.6s steps(6) infinite;
-  -o-animation: play 1.6s steps(6) infinite;
-  animation: play 1.6s steps(6) infinite; }
+  -webkit-animation: play 2.6s steps(6) infinite;
+  -moz-animation: play 2.6s steps(6) infinite;
+  -ms-animation: play 2.6s steps(6) infinite;
+  -o-animation: play 2.6s steps(6) infinite;
+  animation: play 2.6s steps(6) infinite; }
 
 @-webkit-keyframes play {
   from {
