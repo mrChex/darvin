@@ -23,35 +23,35 @@
     background-position: 0px; }
 
   to {
-    background-position: -372px; } }
+    background-position: -310px; } }
 
 @-moz-keyframes play {
   from {
     background-position: 0px; }
 
   to {
-    background-position: -372px; } }
+    background-position: -310px; } }
 
 @-ms-keyframes play {
   from {
     background-position: 0px; }
 
   to {
-    background-position: -372px; } }
+    background-position: -310px; } }
 
 @-o-keyframes play {
   from {
     background-position: 0px; }
 
   to {
-    background-position: -372px; } }
+    background-position: -310px; } }
 
 @keyframes play {
   from {
     background-position: 0px; }
 
   to {
-    background-position: -372px; } }
+    background-position: -310px; } }
 
 .shape {
   background: url(images/home/shape.png) top center;
