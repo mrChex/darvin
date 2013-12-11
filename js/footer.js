@@ -1,5 +1,6 @@
 (function() {
   $(function() {
+    var resize;
     $("footer .open").on('click', function() {
       return $("footer .slide_container").css({
         display: 'block'
@@ -18,8 +19,13 @@
         }
       });
     });
-    $(".homepage,.developmentpage,.strategypage,.teampage,.portfoliopage,.contactspage").height($(document).height() - 110);
-    return $(window).trigger("resize");
+    resize = function() {
+      $(".homepage,.developmentpage,.strategypage,.teampage,.portfoliopage,.contactspage").height($(document).height() - 110);
+      return $("footer").css('top', $(document).height() - 69);
+    };
+    resize();
+    $(window).trigger("resize");
+    return $(window).on("resize", resize);
   });
 
 }).call(this);
