@@ -1,6 +1,5 @@
 (function() {
   $(function() {
-    var n, next_slide_i;
     $("footer .open").on('click', function() {
       return $("footer .slide_container").css({
         display: 'block'
@@ -19,8 +18,7 @@
         }
       });
     });
-    next_slide_i = 1;
-    return n = $("#next_slide");
+    return $(".homepage,.developmentpage,.strategypage,.teampage,.portfoliopage,.contactspage").height($(document).height() - 100);
   });
 
 }).call(this);
