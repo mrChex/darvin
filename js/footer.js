@@ -18,7 +18,7 @@
         }
       });
     });
-    $(".homepage,.developmentpage,.strategypage,.teampage,.portfoliopage,.contactspage").height($(document).height() - 100);
+    $(".homepage,.developmentpage,.strategypage,.teampage,.portfoliopage,.contactspage").height($(document).height() - 110);
     return $(window).trigger("resize");
   });
 
