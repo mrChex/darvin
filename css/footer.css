@@ -74,6 +74,22 @@ body footer {
         width: 543px;
         height: 60px;
         background: url(images/footer/title.png) no-repeat center; }
+      body footer .slide_container .inside table td.other_pages {
+        vertical-align: top;
+        text-align: top; }
+        body footer .slide_container .inside table td.other_pages hr {
+          margin-left: 10px;
+          margin-bottom: 20px;
+          width: 50px;
+          border-color: #f6b900; }
+        body footer .slide_container .inside table td.other_pages a {
+          display: block;
+          color: #f6b900;
+          margin-left: 10px;
+          margin-top: 10px;
+          text-decoration: none; }
+        body footer .slide_container .inside table td.other_pages a:hover {
+          text-decoration: underline; }
       body footer .slide_container .inside table td.form textarea, body footer .slide_container .inside table td.form input {
         display: block;
         width: 520px;

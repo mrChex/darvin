@@ -90,6 +90,29 @@ body {
             background: url(images/footer/title.png) no-repeat center;
           }
 
+          td.other_pages {
+            vertical-align: top;
+            text-align: top;
+            hr {
+              margin-left: 10px;
+              margin-bottom: 20px;
+              width: 50px;
+              border-color: #f6b900;
+            }
+
+            a {
+              display: block;
+              color: #f6b900;
+              margin-left: 10px;
+              margin-top: 10px;
+              text-decoration: none;
+            }
+
+            a:hover {
+              text-decoration: underline;
+            }
+          }
+
           td.form {
 
             textarea, input {
