@@ -47,7 +47,7 @@ body {
         $plan_width: 142px;
         $execute_width: 184px;
         $evaluate_width: 148px;
-        $launch_width: 127px;
+        $launch_width: 126px;
         $nurture_width: 89px;
 
         .menu_container {
@@ -119,7 +119,7 @@ body {
               .nurture {
                 @extend _div;
                 width: $nurture_width;
-                background: url(images/development/nurture.gif) no-repeat;
+                background: url(images/development/nurture.gif) -0px -0px no-repeat;
               }
             }
           }

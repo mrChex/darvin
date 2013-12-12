@@ -36,7 +36,7 @@ body .developmentpage {
           body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu {
             margin-left: auto;
             margin-right: auto;
-            width: 839px; }
+            width: 838px; }
             body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu _div, body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .analyze, body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .plan, body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .execute, body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .evaluate, body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .launch, body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .nurture {
               height: 50px;
               padding-top: 316px;
@@ -67,20 +67,20 @@ body .developmentpage {
               width: 148px;
               background: url(images/development/evaluate.gif) no-repeat; }
             body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .launch {
-              width: 127px;
+              width: 126px;
               background: url(images/development/launch.gif) no-repeat; }
               body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .launch .inside {
                 margin-left: 35px; }
             body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .nurture {
               width: 89px;
-              background: url(images/development/nurture.gif) no-repeat; }
+              background: url(images/development/nurture.gif) 0px 0px no-repeat; }
       body .developmentpage .insidepage_container .screen1 .shape {
         height: 100%;
         position: relative;
         z-index: 10;
         background-color: #f6b900; }
         body .developmentpage .insidepage_container .screen1 .shape .inside {
-          width: 839px;
+          width: 838px;
           margin-left: auto;
           margin-right: auto;
           font-family: Bender;
