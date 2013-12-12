@@ -6,7 +6,7 @@ body .developmentpage {
   body .developmentpage .insidepage_container {
     height: 100%; }
     body .developmentpage .insidepage_container .screen1 {
-      background: url(images/development/background.png) repeat-x bottom #313536; }
+      background: #303030; }
       body .developmentpage .insidepage_container .screen1 table {
         padding: 0;
         margin: 0;
@@ -56,24 +56,24 @@ body .developmentpage {
               font-family: BenderBold; }
             body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .analyze {
               width: 149px;
-              background: url(images/development/analyze.png) no-repeat; }
+              background: url(images/development/analyze.gif) no-repeat; }
             body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .plan {
               width: 142px;
-              background: url(images/development/plan.png) no-repeat; }
+              background: url(images/development/plan.gif) no-repeat; }
             body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .execute {
               width: 184px;
-              background: url(images/development/execute.png) no-repeat; }
+              background: url(images/development/execute.gif) no-repeat; }
             body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .evaluate {
               width: 148px;
-              background: url(images/development/evaluate.png) no-repeat; }
+              background: url(images/development/evaluate.gif) no-repeat; }
             body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .launch {
               width: 127px;
-              background: url(images/development/launch.png) no-repeat; }
+              background: url(images/development/launch.gif) no-repeat; }
               body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .launch .inside {
                 margin-left: 35px; }
             body .developmentpage .insidepage_container .screen1 .menu_container .another_menu_container .menu .nurture {
               width: 89px;
-              background: url(images/development/nurture.png) no-repeat; }
+              background: url(images/development/nurture.gif) no-repeat; }
       body .developmentpage .insidepage_container .screen1 .shape {
         height: 100%;
         position: relative;
