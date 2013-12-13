@@ -1,8 +1,12 @@
 (function() {
-  var get_window_width;
+  var get_window_height, get_window_width;
 
   get_window_width = function() {
     return window.document.body.offsetWidth;
+  };
+
+  get_window_height = function() {
+    return window.document.body.offsetHeight;
   };
 
   $(function() {
@@ -70,11 +74,14 @@
   });
 
   $(function() {
-    var container_width, i, loop_container, loop_inside, loop_inside_endscroll, loop_inside_width, loop_target, target_clone_count, target_width, _i,
+    var container_width, i, loop_container, loop_inside, loop_inside_endscroll, loop_inside_width, loop_target, screen_height, target_clone_count, target_width, _i,
       _this = this;
     loop_container = $('.infinite_loop_container');
     loop_inside = $('.infinite_loop_inside');
     loop_target = $('.infinite_loop_target');
+    screen_height = get_window_height() - 110;
+    loop_container.height(screen_height + 10);
+    loop_inside.height(screen_height);
     console.log('inited', loop_container, loop_inside, loop_target);
     container_width = loop_container.width();
     target_width = loop_target.width();

@@ -1,4 +1,5 @@
 get_window_width =-> window.document.body.offsetWidth
+get_window_height =-> window.document.body.offsetHeight
 
 $ ->
 	current_slide = 0
@@ -43,6 +44,11 @@ $ ->
 	loop_container = $('.infinite_loop_container')
 	loop_inside = $('.infinite_loop_inside')
 	loop_target = $('.infinite_loop_target')
+
+	screen_height = get_window_height() - 110
+	loop_container.height(screen_height+10)
+	loop_inside.height(screen_height)
+
 
 	console.log 'inited', loop_container, loop_inside, loop_target
 
