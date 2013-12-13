@@ -35,74 +35,85 @@ body .portfoliopage {
     body .portfoliopage .insidepage_container .screen2 {
       background: #b5b5b5;
       z-index: 4;
-      right: -100px; }
-      body .portfoliopage .insidepage_container .screen2 .items_container {
-        display: table;
+      right: -100px;
+      max-height: 100%;
+      overflow: hidden; }
+      body .portfoliopage .insidepage_container .screen2 .infinite_loop_container {
         width: 100%;
-        height: 100%; }
-        body .portfoliopage .insidepage_container .screen2 .items_container .item {
-          display: table-cell;
-          height: inherit; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.instagram {
-            background: url(images/portfolio/screen2/instagram.png) no-repeat right center; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.instagram:hover {
-            background: url(images/portfolio/screen2/instagram_selected.png) no-repeat right center #5b90f6; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.instagram:after {
-            content: "";
-            width: inherit;
-            height: inherit;
-            display: block;
-            background: url(images/portfolio/screen2/instagram_logo.png) no-repeat bottom center; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.vsco {
-            background: url(images/portfolio/screen2/vsco.png) no-repeat right center #6d6d6d; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.vsco:hover {
-            background: url(images/portfolio/screen2/vsco_selected.png) no-repeat right center #5b90f6; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.vsco:after {
-            content: "";
-            width: inherit;
-            height: inherit;
-            display: block;
-            background: url(images/portfolio/screen2/vsco_logo.png) no-repeat bottom 10px center; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.yahoo {
-            background: url(images/portfolio/screen2/yahoo.png) no-repeat right center; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.yahoo:hover {
-            background: url(images/portfolio/screen2/yahoo_selected.png) no-repeat right center #5b90f6; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.yahoo:after {
-            content: "";
-            width: inherit;
-            height: inherit;
-            display: block;
-            background: url(images/portfolio/screen2/yahoo_logo.png) no-repeat bottom 12px center; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.pinterest {
-            background: url(images/portfolio/screen2/pinterest.png) no-repeat right center #6d6d6d; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.pinterest:hover {
-            background: url(images/portfolio/screen2/pinterest_selected.png) no-repeat right center #5b90f6; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.pinterest:after {
-            content: "";
-            width: inherit;
-            height: inherit;
-            display: block;
-            background: url(images/portfolio/screen2/pinterest_logo.png) no-repeat bottom 10px center; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.googleplus {
-            background: url(images/portfolio/screen2/googleplus.png) no-repeat right center; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.googleplus:hover {
-            background: url(images/portfolio/screen2/googleplus_selected.png) no-repeat right center #5b90f6; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.googleplus:after {
-            content: "";
-            width: inherit;
-            height: inherit;
-            display: block;
-            background: url(images/portfolio/screen2/googleplus_logo.png) no-repeat bottom center; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.youtube {
-            background: url(images/portfolio/screen2/youtube.png) no-repeat right center #6d6d6d; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.youtube:hover {
-            background: url(images/portfolio/screen2/youtube_selected.png) no-repeat right center #5b90f6; }
-          body .portfoliopage .insidepage_container .screen2 .items_container .item.youtube:after {
-            content: "";
-            width: inherit;
-            height: inherit;
-            display: block;
-            background: url(images/portfolio/screen2/youtube_logo.png) no-repeat bottom 5px right; }
+        height: 106%;
+        border: 1px solid #000;
+        overflow: auto; }
+        body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside {
+          height: 94%; }
+          body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container {
+            width: 1200px;
+            height: 100%;
+            display: table;
+            float: left;
+            /* required */ }
+            body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item {
+              display: table-cell;
+              height: inherit; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.instagram {
+                background: url(images/portfolio/screen2/instagram.png) no-repeat right center; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.instagram:hover {
+                background: url(images/portfolio/screen2/instagram_selected.png) no-repeat right center #5b90f6; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.instagram:after {
+                content: "";
+                width: inherit;
+                height: inherit;
+                display: block;
+                background: url(images/portfolio/screen2/instagram_logo.png) no-repeat bottom center; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.vsco {
+                background: url(images/portfolio/screen2/vsco.png) no-repeat right center #6d6d6d; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.vsco:hover {
+                background: url(images/portfolio/screen2/vsco_selected.png) no-repeat right center #5b90f6; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.vsco:after {
+                content: "";
+                width: inherit;
+                height: inherit;
+                display: block;
+                background: url(images/portfolio/screen2/vsco_logo.png) no-repeat bottom 10px center; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.yahoo {
+                background: url(images/portfolio/screen2/yahoo.png) no-repeat right center; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.yahoo:hover {
+                background: url(images/portfolio/screen2/yahoo_selected.png) no-repeat right center #5b90f6; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.yahoo:after {
+                content: "";
+                width: inherit;
+                height: inherit;
+                display: block;
+                background: url(images/portfolio/screen2/yahoo_logo.png) no-repeat bottom 12px center; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.pinterest {
+                background: url(images/portfolio/screen2/pinterest.png) no-repeat right center #6d6d6d; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.pinterest:hover {
+                background: url(images/portfolio/screen2/pinterest_selected.png) no-repeat right center #5b90f6; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.pinterest:after {
+                content: "";
+                width: inherit;
+                height: inherit;
+                display: block;
+                background: url(images/portfolio/screen2/pinterest_logo.png) no-repeat bottom 10px center; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.googleplus {
+                background: url(images/portfolio/screen2/googleplus.png) no-repeat right center; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.googleplus:hover {
+                background: url(images/portfolio/screen2/googleplus_selected.png) no-repeat right center #5b90f6; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.googleplus:after {
+                content: "";
+                width: inherit;
+                height: inherit;
+                display: block;
+                background: url(images/portfolio/screen2/googleplus_logo.png) no-repeat bottom center; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.youtube {
+                background: url(images/portfolio/screen2/youtube.png) no-repeat right center #6d6d6d; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.youtube:hover {
+                background: url(images/portfolio/screen2/youtube_selected.png) no-repeat right center #5b90f6; }
+              body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container .item.youtube:after {
+                content: "";
+                width: inherit;
+                height: inherit;
+                display: block;
+                background: url(images/portfolio/screen2/youtube_logo.png) no-repeat bottom 5px right; }
     body .portfoliopage .insidepage_container .screen3 {
       background: #414040;
       z-index: 3;
