@@ -80,7 +80,7 @@ body .teampage {
             body .teampage .insidepage_container .screen2 .hexagon .text_container .inside h1 {
               font-family: BenderBold;
               color: #f6b900;
-              font-size: 28px;
+              font-size: 31px;
               margin: 0px;
               padding: 0px; }
             body .teampage .insidepage_container .screen2 .hexagon .text_container .inside p {
@@ -99,7 +99,8 @@ body .teampage {
             body .teampage .insidepage_container .screen2 .hexagon .text_container .inside .skill_container .skill_title {
               width: 200px;
               text-align: right;
-              float: left; }
+              float: left;
+              color: #f6b900; }
             body .teampage .insidepage_container .screen2 .hexagon .text_container .inside .skill_container .skill_bar {
               height: 30px;
               width: 200px;
