@@ -13,7 +13,10 @@ body .portfoliodetailpage {
         position: absolute;
         display: block;
         margin-top: 20px;
-        margin-left: 20px; }
+        margin-left: 20px;
+        background: url(images/portfolio/screen3/close.png) no-repeat center;
+        width: 33px;
+        height: 33px; }
       body .portfoliodetailpage .insidepage_container .screen1 .left_side {
         display: table-cell;
         width: 73px;
