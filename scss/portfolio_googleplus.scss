@@ -17,6 +17,13 @@ body {
         display: table;
         width: 100%;
 
+        .close_page {
+          position: absolute;
+          display: block;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+
         .left_side {
           display: table-cell;
           width: 73px;
@@ -49,7 +56,6 @@ body {
             width: 900px;
             margin-left: auto;
             margin-right: auto;
-            background: #fff0ff;
 
             .image {
               width: 250px;
@@ -135,7 +141,29 @@ body {
                 }
               } // .app_types
             }
-          }
+
+            .pagination_container {
+              margin-left: auto;
+              margin-right: auto;
+              width: 27px * 7;
+              margin-top: 30px;
+              a {
+                display: block;
+                border: 1px solid #000;
+                border-radius: 7px;
+                width: 7px;
+                height: 7px;
+                float:left;
+                margin-left: 20px;
+              }
+
+              a.active {
+                background: #000;
+              }
+
+            }
+
+          } // .inside
 
         }
 

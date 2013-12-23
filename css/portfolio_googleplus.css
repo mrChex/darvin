@@ -9,6 +9,11 @@ body .portfoliodetailpage {
       background: #5b90f6;
       display: table;
       width: 100%; }
+      body .portfoliodetailpage .insidepage_container .screen1 .close_page {
+        position: absolute;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px; }
       body .portfoliodetailpage .insidepage_container .screen1 .left_side {
         display: table-cell;
         width: 73px;
@@ -34,8 +39,7 @@ body .portfoliodetailpage {
           margin-top: 120px;
           width: 900px;
           margin-left: auto;
-          margin-right: auto;
-          background: #fff0ff; }
+          margin-right: auto; }
           body .portfoliodetailpage .insidepage_container .screen1 .content .inside .image {
             width: 250px;
             float: left; }
@@ -99,3 +103,18 @@ body .portfoliodetailpage {
                 background: url(images/portfolio/screen3/desktopapp_icon.png) no-repeat center top; }
               body .portfoliodetailpage .insidepage_container .screen1 .content .inside .text .app_types .ios {
                 background: url(images/portfolio/screen3/iosapp_icon.png) no-repeat center top 13px; }
+          body .portfoliodetailpage .insidepage_container .screen1 .content .inside .pagination_container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 189px;
+            margin-top: 30px; }
+            body .portfoliodetailpage .insidepage_container .screen1 .content .inside .pagination_container a {
+              display: block;
+              border: 1px solid #000;
+              border-radius: 7px;
+              width: 7px;
+              height: 7px;
+              float: left;
+              margin-left: 20px; }
+            body .portfoliodetailpage .insidepage_container .screen1 .content .inside .pagination_container a.active {
+              background: #000; }
