@@ -104,10 +104,19 @@ body footer {
         font-size: 20px; }
       body footer .slide_container .inside table td.form textarea {
         height: 130px; }
-      body footer .slide_container .inside table td.form input {
+      body footer .slide_container .inside table td.form input[type=text] {
         background: url(images/footer/mail.png) no-repeat left 8px center white;
-        width: 489px;
-        padding-left: 40px; }
+        width: 330px;
+        padding-left: 40px;
+        float: left; }
+      body footer .slide_container .inside table td.form input[type=submit] {
+        width: 152px;
+        height: 47px;
+        border: 3px solid #000;
+        border-radius: 10px;
+        font-size: 12px;
+        float: right;
+        margin-top: 2px; }
       body footer .slide_container .inside table td.contacts {
         padding-left: 30px; }
         body footer .slide_container .inside table td.contacts .contacts_inside {
