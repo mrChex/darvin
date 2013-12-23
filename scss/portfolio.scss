@@ -186,8 +186,15 @@ body {
         z-index: 2;
         right: -100px;
 
+        .educationmaterial {
+          background: url(images/portfolio/screen5/education_material.png) no-repeat;
+          width: 672px;
+          height: 48px;
+          margin-top: 50px;
+        }
+
         .items_container {
-          margin-top: 200px;
+          margin-top: 150px;
           display: table;
           .item {
             display: table-cell;

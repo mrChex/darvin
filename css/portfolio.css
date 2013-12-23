@@ -163,8 +163,13 @@ body .portfoliopage {
       background: #c2b7a2;
       z-index: 2;
       right: -100px; }
+      body .portfoliopage .insidepage_container .screen4 .educationmaterial {
+        background: url(images/portfolio/screen5/education_material.png) no-repeat;
+        width: 672px;
+        height: 48px;
+        margin-top: 50px; }
       body .portfoliopage .insidepage_container .screen4 .items_container {
-        margin-top: 200px;
+        margin-top: 150px;
         display: table; }
         body .portfoliopage .insidepage_container .screen4 .items_container .item {
           display: table-cell;
