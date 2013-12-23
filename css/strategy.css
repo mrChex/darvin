@@ -125,7 +125,10 @@ body .strategypage {
       body .strategypage .insidepage_container .screen3 blockquote {
         opacity: 1;
         left: 0;
-        font-family: BenderBold; }
+        font-family: BenderBold;
+        background: url(images/strategy/screen3/quote.png);
+        width: 698px;
+        height: 86px; }
       body .strategypage .insidepage_container .screen3 .text_container {
         width: 900px;
         margin-left: auto;
