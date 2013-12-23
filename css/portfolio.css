@@ -6,7 +6,7 @@ body .portfoliopage {
   body .portfoliopage .insidepage_container {
     height: 100%; }
     body .portfoliopage .insidepage_container .screen1 {
-      background: url(images/portfolio/screen1/background.jpg) no-repeat center;
+      background: url(images/portfolio/screen1/background.jpg) #393e42 no-repeat center;
       -moz-background-size: cover;
       /* Firefox 3.6+ */
       -webkit-background-size: cover;
