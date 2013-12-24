@@ -25,7 +25,7 @@ body {
     background: url(images/header/background.jpg) repeat-x black;
     height: 41px;
     max-height: 41px;
-    min-width: 1100px;
+    min-width: 1000px;
     overflow: hidden; }
     body header .container {
       color: #ffffff;

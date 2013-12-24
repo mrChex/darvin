@@ -1,7 +1,7 @@
 body.blog_bg {
   background: #212627 !important; }
 body .blogpage {
-  min-width: 1100px;
+  min-width: 1000px;
   margin: 0;
   background: url(images/blog/background.png) no-repeat 0 0;
   background-size: 100%;
