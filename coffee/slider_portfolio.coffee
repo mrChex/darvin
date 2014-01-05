@@ -45,7 +45,9 @@ $ ->
 	loop_inside = $('.infinite_loop_inside')
 	loop_target = $('.infinite_loop_target')
 
-	screen_height = get_window_height() - 110
+	if get_window_height() > 791
+		screen_height = get_window_height() - 110
+	else screen_height = 791
 	loop_container.height(screen_height+10)
 	loop_inside.height(screen_height)
 
