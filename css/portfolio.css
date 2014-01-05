@@ -40,7 +40,8 @@ body .portfoliopage {
         width: 100%;
         height: 100%;
         border: 1px solid #000;
-        overflow: auto; }
+        overflow-x: auto;
+        overflow-y: hidden; }
         body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside {
           height: 100%; }
           body .portfoliopage .insidepage_container .screen2 .infinite_loop_container .infinite_loop_inside .items_container {
