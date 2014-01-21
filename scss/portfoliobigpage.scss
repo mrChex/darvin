@@ -66,18 +66,20 @@ body {
 
     .infinite_loop_container {
         width: 100%;
-        height: 600px;
+        height: 620px;
         border-top: 3px solid #f6b900;
         overflow-x: auto;
         overflow-y: hidden;
         background-color: #b5b5b5;
+        position: relative;
+        margin-bottom: -20px;
 
         .infinite_loop_inside {
-          height: 100%;
+          height: 600px;
 
           .items_container {
             width: 1200px;
-            height: 100%;
+            height: 600px;
             display: table;
             float: left;  /* required */
 
